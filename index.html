@@ -585,6 +585,109 @@
     </div>
   </section>
 
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Preguntas Frecuentes
+        </span>
+        <h2 class="section-title">¿Tienes preguntas sobre FixCore?</h2>
+        <p class="section-subtitle">Respuestas rápidas a las dudas más comunes de nuestros clientes.</p>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq-item active" id="faq1">
+          <div class="faq-item__header" onclick="toggleFaq(this)">
+            <span class="faq-item__question">¿Necesito instalar hardware especial?</span>
+            <span class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </div>
+          <div class="faq-item__body">
+            <p class="faq-item__answer">No. FixCore es 100% SaaS y funciona en la nube. Solo necesitas un smartphone o tablet para escanear los códigos QR que puedes imprimir con cualquier impresora. No requieres sensores IoT ni infraestructura especial para comenzar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq2">
+          <div class="faq-item__header" onclick="toggleFaq(this)">
+            <span class="faq-item__question">¿Cómo funciona el cobro por técnico en campo?</span>
+            <span class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </div>
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Nuestro modelo es por licencia de técnico activo en campo. Los operarios que solo reportan fallas (escanean QR) no cuentan como licencia. Solo pagas por los técnicos que reciben y cierran Órdenes de Trabajo. Incluimos usuarios gerenciales ilimitados.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq3">
+          <div class="faq-item__header" onclick="toggleFaq(this)">
+            <span class="faq-item__question">¿Es difícil que los operarios mayores aprendan a usarlo?</span>
+            <span class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </div>
+          <div class="faq-item__body">
+            <p class="faq-item__answer">FixCore fue diseñado pensando en operarios de todas las edades. El flujo de reporte es de solo 3 clics: escanear, seleccionar tipo de falla y enviar. No requiere crear cuenta ni recordar contraseñas. Nuestros clientes reportan adopción completa en menos de una semana.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq4">
+          <div class="faq-item__header" onclick="toggleFaq(this)">
+            <span class="faq-item__question">¿Puedo integrar FixCore con mi ERP actual?</span>
+            <span class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </div>
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Sí. Ofrecemos una API REST documentada y webhooks configurables que puedes conectar a SAP, Oracle, Microsoft Dynamics o cualquier otro ERP. También soportamos integración vía n8n y Zapier para automatizaciones sin código.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOTTOM CTA ===== -->
+  <section class="bottom-cta" id="demo">
+    <div class="container bottom-cta__inner">
+      <h2 class="bottom-cta__title animate-on-scroll">¿Listo para proteger tus bienes de capital?</h2>
+      <p class="bottom-cta__subtitle animate-on-scroll">Únete a las empresas que ya redujeron sus tiempos muertos con FixCore.</p>
+      <a href="#" class="btn btn--green btn--lg animate-on-scroll" id="bottomCtaBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        Comienza tu Prueba Gratuita
+      </a>
+      <p class="bottom-cta__fine-print animate-on-scroll">Sin tarjeta de crédito requerida • Piloto en 3 máquinas • Cancela cuando quieras</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <a href="#" class="footer__logo">
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="url(#footLogoGrad)" stroke-width="7" stroke-linejoin="round"/>
+          <circle cx="50" cy="50" r="10" fill="#4da3ff"/>
+          <defs>
+            <linearGradient id="footLogoGrad" x1="0" y1="0" x2="100" y2="100">
+              <stop offset="0%" stop-color="#4da3ff"/>
+              <stop offset="100%" stop-color="#8ec5ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>FixCore</span>
+      </a>
+
+      <nav class="footer__links">
+        <a href="#" id="footerSupport">Soporte</a>
+        <a href="#" id="footerAPI">API / Webhooks</a>
+        <a href="#" id="footerPrivacy">Política de Privacidad</a>
+        <a href="#" id="footerTerms">Términos B2B</a>
+      </nav>
+
+      <span class="footer__copy">&copy; 2026 FixCore. Todos los derechos reservados.</span>
+    </div>
+  </footer>
   
 </body>  
 </html>
