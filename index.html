@@ -123,10 +123,148 @@
 
       <div class="hero__visual">
         <div class="hero__visual-dashboard">
-          <img src="assets/img/dashboard-mockup.png" alt="Dashboard FixCore - Gráficos de MTTR y disponibilidad de activos" loading="eager" />
+          <img src="public/assets/images/dashboard-mockup.png" alt="Dashboard FixCore - Gráficos de MTTR y disponibilidad de activos" loading="eager" />
         </div>
         <div class="hero__visual-phone">
-          <img src="assets/img/phone-qr-mockup.png" alt="App móvil FixCore escaneando código QR industrial" loading="eager" />
+          <img src="public/assets/images/phone-qr-mockup.png" alt="App móvil FixCore escaneando código QR industrial" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="stats-bar" id="stats">
+    <div class="container stats-bar__inner">
+      <div class="stats-bar__item animate-on-scroll">
+        <div class="stats-bar__number"><span data-count="30">0</span>%</div>
+        <div class="stats-bar__label">Reducción de MTTR</div>
+      </div>
+      <div class="stats-bar__item animate-on-scroll">
+        <div class="stats-bar__number">+<span data-count="10000">0</span></div>
+        <div class="stats-bar__label">OTs Resueltas</div>
+      </div>
+      <div class="stats-bar__item animate-on-scroll">
+        <div class="stats-bar__number"><span data-count="99">0</span>%</div>
+        <div class="stats-bar__label">Disponibilidad de Activos</div>
+      </div>
+      <div class="stats-bar__item animate-on-scroll">
+        <div class="stats-bar__number"><span data-count="0" data-fixed="true">0</span></div>
+        <div class="stats-bar__label">Papel Utilizado</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Funcionalidades
+        </span>
+        <h2 class="section-title">Una experiencia de mantenimiento sin fricción.</h2>
+        <p class="section-subtitle">Cada módulo diseñado para eliminar papel, reducir errores y acelerar la resolución de fallas.</p>
+      </div>
+
+      <div class="features__grid">
+        
+        <div class="feature-card animate-on-scroll" id="featureQR">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/>
+              <rect x="2" y="14" width="8" height="8" rx="1"/><path d="M14 14h3v3"/><path d="M20 14v3h-3"/><path d="M14 20h6"/><path d="M20 20v-3"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Reportes por QR</h3>
+          <p class="feature-card__desc">Escanea y reporta fallas en menos de 3 clics desde cualquier smartphone. Sin descargar apps.</p>
+        </div>
+
+        
+        <div class="feature-card animate-on-scroll" id="featureAlerts">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Alertas Automatizadas</h3>
+          <p class="feature-card__desc">Recibe notificaciones de paradas críticas directamente en WhatsApp (vía n8n). En tiempo real.</p>
+        </div>
+
+        
+        <div class="feature-card animate-on-scroll" id="featureOTs">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Gestión de OTs</h3>
+          <p class="feature-card__desc">Asignación inteligente, check-lists de herramientas y cierre digital. Todo trazable.</p>
+        </div>
+
+        
+        <div class="feature-card animate-on-scroll" id="featureInventory">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Control de Inventario</h3>
+          <p class="feature-card__desc">Descuento de stock en tiempo real y alertas de reabastecimiento automáticas.</p>
+        </div>
+
+        <!-- Card 5: Multi-Planta -->
+        <div class="feature-card animate-on-scroll" id="featureMultiPlant">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/>
+              <path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 14h.01"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Arquitectura Multi-Planta</h3>
+          <p class="feature-card__desc">Portal unificado ideal para firmas contratistas que gestionan múltiples clientes.</p>
+        </div>
+
+        <!-- Card 6: Reportes -->
+        <div class="feature-card animate-on-scroll" id="featureReports">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+              <line x1="2" y1="20" x2="22" y2="20"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Reportes Gerenciales</h3>
+          <p class="feature-card__desc">Cálculo automático de MTTR y disponibilidad a un clic. Decisiones basadas en datos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works section section--light" id="how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Proceso Simple
+        </span>
+        <h2 class="section-title">Optimiza tu mantenimiento en 3 simples pasos.</h2>
+        <p class="section-subtitle">De la falla reportada a la máquina reparada, sin papel y sin cuellos de botella.</p>
+      </div>
+
+      <div class="how-it-works__steps">
+        <div class="step-card animate-on-scroll" id="step1">
+          <div class="step-card__number">1</div>
+          <h3 class="step-card__title">Escanea y Reporta</h3>
+          <p class="step-card__desc">El operario reporta la falla frente a la máquina con un simple escaneo QR desde su celular.</p>
+        </div>
+
+        <div class="step-card animate-on-scroll" id="step2">
+          <div class="step-card__number">2</div>
+          <h3 class="step-card__title">Asigna y Repara</h3>
+          <p class="step-card__desc">Notificación automática al técnico exacto con la herramienta y repuesto correcto.</p>
+        </div>
+
+        <div class="step-card animate-on-scroll" id="step3">
+          <div class="step-card__number">3</div>
+          <h3 class="step-card__title">Mide y Optimiza</h3>
+          <p class="step-card__desc">El jefe de planta visualiza reportes de tiempos de respuesta y toma mejores decisiones.</p>
         </div>
       </div>
     </div>
