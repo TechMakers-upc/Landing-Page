@@ -2,13 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FixCore</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixCore — Plataforma CMMS para Gestión de Mantenimiento Industrial</title>
+  <meta name="description" content="Digitaliza tus órdenes de trabajo, gestiona repuestos y recibe alertas en WhatsApp. La plataforma SaaS que técnicos y jefes de planta aman usar." />
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="public/assets/styles/style.css" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a1628'/><polygon points='16,4 28,10 28,22 16,28 4,22 4,10' fill='none' stroke='%232d7dd2' stroke-width='2.5'/><circle cx='16' cy='16' r='4' fill='%234da3ff'/></svg>" />
 </head>
 
 <body>
-    
+     <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" id="logo">
+        <svg class="header__logo-icon" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="url(#logoGrad)" stroke-width="7" stroke-linejoin="round"/>
+          <polygon points="50,22 78,38 78,62 50,78 22,62 22,38" fill="none" stroke="url(#logoGrad)" stroke-width="5" stroke-linejoin="round" opacity="0.5"/>
+          <circle cx="50" cy="50" r="10" fill="url(#dotGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="100" y2="100">
+              <stop offset="0%" stop-color="#1e56a0"/>
+              <stop offset="100%" stop-color="#4da3ff"/>
+            </linearGradient>
+            <radialGradient id="dotGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4da3ff"/>
+              <stop offset="100%" stop-color="#2d7dd2"/>
+            </radialGradient>
+          </defs>
+        </svg>
+        <span class="header__logo-text">Fix<span>Core</span></span>
+      </a>
+
+      <nav class="header__nav" id="mainNav">
+        <a href="#features">Características</a>
+        <a href="#solutions">Soluciones</a>
+        <a href="#pricing">Precios</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-toggle">
+          <a href="index.html" class="lang-toggle__btn active" onclick="saveScroll()">ES</a>
+          <a href="index-en.html" class="lang-toggle__btn" onclick="saveScroll()">EN</a>
+        </div>
+      </div>
+
+      <button class="header__mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 1L10.2 5.5L15 6.2L11.5 9.6L12.4 14.3L8 12L3.6 14.3L4.5 9.6L1 6.2L5.8 5.5L8 1Z" fill="currentColor"/>
+          </svg>
+          +50 plantas industriales ya optimizan sus operaciones
+        </div>
+
+        <h1 class="hero__title">
+          Elimina los <span>tiempos muertos</span> en tu planta industrial.
+        </h1>
+
+        <p class="hero__subtitle">
+          Digitaliza tus órdenes de trabajo, gestiona repuestos y recibe alertas en WhatsApp. La plataforma SaaS que técnicos y jefes de planta aman usar.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#pricing" class="btn btn--primary btn--lg" id="heroPrimaryBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            Prueba Gratis
+          </a>
+          <a href="#how-it-works" class="btn btn--secondary btn--lg" id="heroSecondaryBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Ver Funcionamiento
+          </a>
+        </div>
+
+        <div class="hero__social-proof">
+          <div class="hero__stars">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span class="hero__stars-text">4.9/5 de +120 reviews</span>
+          </div>
+
+          <div class="hero__logos">
+            <span>Confían en nosotros:</span>
+            <div class="hero__logo-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              InduPro
+            </div>
+            <div class="hero__logo-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              SolMex
+            </div>
+            <div class="hero__logo-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3l-4 4-4-4"/></svg>
+              AceroVit
+            </div>
+            <div class="hero__logo-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+              MetalCorp
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__visual-dashboard">
+          <img src="assets/img/dashboard-mockup.png" alt="Dashboard FixCore - Gráficos de MTTR y disponibilidad de activos" loading="eager" />
+        </div>
+        <div class="hero__visual-phone">
+          <img src="assets/img/phone-qr-mockup.png" alt="App móvil FixCore escaneando código QR industrial" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
