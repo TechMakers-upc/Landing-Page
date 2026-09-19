@@ -373,7 +373,217 @@
     </div>
   </section>
 
-  <!--  hasta aca -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          Precios Transparentes
+        </span>
+        <h2 class="section-title">Planes diseñados para escalar contigo.</h2>
+        <p class="section-subtitle">Empieza gratis, crece cuando estés listo. Sin costos ocultos ni contratos de permanencia.</p>
+      </div>
+
+      
+      <div class="pricing__toggle">
+        <span class="pricing__toggle-label active" id="toggleMonthly" onclick="togglePricing('monthly')">Mensual</span>
+        <button class="pricing__toggle-switch" id="pricingSwitch" onclick="togglePricingSwitch()" aria-label="Cambiar entre mensual y anual"></button>
+        <span class="pricing__toggle-label" id="toggleAnnual" onclick="togglePricing('annual')">Anual</span>
+        <span class="pricing__save-badge">Ahorra 20%</span>
+      </div>
+
+      <div class="pricing__grid">
+
+        <!-- ===== PLAN FREEMIUM ===== -->
+        <div class="pricing-card animate-on-scroll" id="planFree">
+          <div class="pricing-card__header">
+            <div class="pricing-card__icon pricing-card__icon--free">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="pricing-card__name">Entrada</h3>
+            <p class="pricing-card__desc">Prueba sin fricción. Ideal para validar la plataforma en tu planta antes de escalar.</p>
+          </div>
+
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount pricing-card__amount--free">Gratis</span>
+          </div>
+          <p class="pricing-card__period-note">Para siempre • Sin tarjeta de crédito</p>
+
+          <div class="pricing-card__divider"></div>
+
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Hasta 3 máquinas críticas
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Reportes QR ilimitados
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              1 usuario técnico
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Órdenes de Trabajo básicas
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Historial de 30 días
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--excluded">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Alertas WhatsApp
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--excluded">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Reportes gerenciales
+            </li>
+          </ul>
+
+          <a href="#pricing" class="pricing-card__cta pricing-card__cta--outline" id="ctaFree">
+            Comenzar Gratis
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- ===== PLAN DE PLANTA ===== -->
+        <div class="pricing-card pricing-card--featured animate-on-scroll" id="planPlant">
+          <div class="pricing-card__popular">⭐ Más Popular</div>
+          <div class="pricing-card__header">
+            <div class="pricing-card__icon pricing-card__icon--plant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 10h.01"/></svg>
+            </div>
+            <h3 class="pricing-card__name">Planta</h3>
+            <p class="pricing-card__desc">Para fábricas individuales. Todo lo que tu jefatura y operarios necesitan.</p>
+          </div>
+
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount" data-monthly="89" data-annual="71">89</span>
+            <span class="pricing-card__period">USD / mes</span>
+          </div>
+          <p class="pricing-card__period-note">
+            <span class="pricing-annual-note" style="display:none;">Facturado anualmente ($852/año)</span>
+            <span class="pricing-monthly-note">≈ S/ 330 al mes • Facturación mensual</span>
+          </p>
+
+          <div class="pricing-card__divider"></div>
+
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Máquinas ilimitadas
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Hasta 10 técnicos activos
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Usuarios gerenciales ilimitados
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Alertas WhatsApp en tiempo real
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Control de inventario y stock
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Reportes MTTR y disponibilidad
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Historial completo ilimitado
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Soporte prioritario
+            </li>
+          </ul>
+
+          <a href="#pricing" class="pricing-card__cta pricing-card__cta--primary" id="ctaPlant">
+            Suscribirse Ahora
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- ===== PLAN CONTRATISTA ===== -->
+        <div class="pricing-card animate-on-scroll" id="planContractor">
+          <div class="pricing-card__header">
+            <div class="pricing-card__icon pricing-card__icon--contractor">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 class="pricing-card__name">Contratista</h3>
+            <p class="pricing-card__desc">Para firmas B2B de mantenimiento que gestionan múltiples fábricas. Escala sin límites.</p>
+          </div>
+
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount" data-monthly="29" data-annual="23">29</span>
+            <span class="pricing-card__period">USD / técnico / mes</span>
+          </div>
+          <p class="pricing-card__period-note">
+            <span class="pricing-annual-note" style="display:none;">Facturado anualmente por técnico ($276/técnico/año)</span>
+            <span class="pricing-monthly-note">Clientes y plantas ilimitadas incluidas</span>
+          </p>
+
+          <div class="pricing-card__divider"></div>
+
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Clientes/plantas ilimitadas
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Portal multi-tenant completo
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Reportes white-label con tu logo
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Ruteo y despacho de técnicos
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              API REST + Webhooks
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Integración ERP (SAP, Oracle)
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Todo lo del Plan Planta
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Onboarding dedicado
+            </li>
+          </ul>
+
+          <a href="#pricing" class="pricing-card__cta pricing-card__cta--orange" id="ctaContractor">
+            Suscribirse Ahora
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Guarantee -->
+      <div class="pricing__guarantee animate-on-scroll">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        14 días de prueba gratuita en todos los planes de pago • Sin tarjeta de crédito • Cancela cuando quieras
+      </div>
+    </div>
+  </section>
 
   
 </body>  
