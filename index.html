@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -47,8 +47,8 @@
 
       <div class="header__actions">
         <div class="lang-toggle">
-          <a href="index.html" class="lang-toggle__btn active" onclick="saveScroll()">ES</a>
-          <a href="index-en.html" class="lang-toggle__btn" onclick="saveScroll()">EN</a>
+          <a href="./index.html" class="lang-toggle__btn active" onclick="saveScroll()">ES</a>
+          <a href="./index-en.html" class="lang-toggle__btn" onclick="saveScroll()">EN</a>
         </div>
       </div>
 
@@ -341,7 +341,7 @@
             Con FixCore dejé de hurgar en chats de WhatsApp a fin de mes. Todo está centralizado y las paradas se resuelven más rápido. Fue un antes y un después para nuestra operación.
           </p>
           <div class="testimonial-card__author">
-            <img class="testimonial-card__avatar" src="assets/img/testimonial-carla.png" alt="Carla García" />
+            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-carla.png" alt="Carla García" />
             <div>
               <div class="testimonial-card__name">Carla García</div>
               <div class="testimonial-card__role">Jefa de Planta — InduPro México</div>
@@ -362,7 +362,7 @@
             El portal multi-cliente nos permitió escalar. Ahora enviamos reportes automáticos con nuestro propio logo a las fábricas que atendemos. FixCore es nuestra ventaja competitiva.
           </p>
           <div class="testimonial-card__author">
-            <img class="testimonial-card__avatar" src="assets/img/testimonial-victor.png" alt="Víctor Salazar" />
+            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-victor.png" alt="Víctor Salazar" />
             <div>
               <div class="testimonial-card__name">Víctor Salazar</div>
               <div class="testimonial-card__role">Gerente de Operaciones B2B — SolMex Servicios</div>
@@ -858,11 +858,7 @@
     counterObserver.observe(statsSection);
   }
 
-  // ============================================================
-  // PARTE 4: MONTHLY & ANNUAL PRICING VIEWS
-  // ============================================================
 
-  // ---- Pricing Toggle (Monthly / Annual) ----
   let isAnnual = false;
 
   function togglePricingSwitch() {
@@ -955,11 +951,7 @@
 
   }
 
-  // ============================================================
-  // PARTE 5: FAQ COMPONENT & SUPPORT
-  // ============================================================
 
-  // ---- FAQ Accordion ----
   function toggleFaq(headerEl) {
 
     const faqItem = headerEl.parentElement;
@@ -967,12 +959,10 @@
     const isActive =
       faqItem.classList.contains('active');
 
-    // Cerrar los demás FAQ
     document.querySelectorAll('.faq-item').forEach(item => {
       item.classList.remove('active');
     });
 
-    // Abrir el FAQ seleccionado
     if (!isActive) {
       faqItem.classList.add('active');
     }
