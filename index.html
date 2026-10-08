@@ -5,61 +5,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FixCore — Plataforma CMMS para Gestión de Mantenimiento Industrial</title>
-  <meta name="description" content="Digitaliza tus órdenes de trabajo, gestiona repuestos y recibe alertas en WhatsApp. La plataforma SaaS que técnicos y jefes de planta aman usar." />
-    
+  <meta name="description" content="Conoce FixCore, un proyecto web para centralizar activos, órdenes de trabajo y repuestos del mantenimiento industrial." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="public/assets/styles/style.css" />
+  <link rel="alternate" hreflang="es" href="https://techmakers-upc.github.io/Landing-Page/index.html" />
+  <link rel="alternate" hreflang="en" href="https://techmakers-upc.github.io/Landing-Page/index-en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://techmakers-upc.github.io/Landing-Page/index.html" />
+  <style>
+    .faq-item__header { width: 100%; background: transparent; color: inherit; text-align: left; }
+    button.pricing__toggle-label { background: transparent; font-family: inherit; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #2d7dd2; outline-offset: 4px; }
+    .pricing__toggle-label:focus-visible { border-radius: 3px; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a1628'/><polygon points='16,4 28,10 28,22 16,28 4,22 4,10' fill='none' stroke='%232d7dd2' stroke-width='2.5'/><circle cx='16' cy='16' r='4' fill='%234da3ff'/></svg>" />
 </head>
 
 <body>
-     <header class="header" id="header">
-    <div class="header__inner">
-      <a href="#" class="header__logo" id="logo">
-        <svg class="header__logo-icon" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="url(#logoGrad)" stroke-width="7" stroke-linejoin="round"/>
-          <polygon points="50,22 78,38 78,62 50,78 22,62 22,38" fill="none" stroke="url(#logoGrad)" stroke-width="5" stroke-linejoin="round" opacity="0.5"/>
-          <circle cx="50" cy="50" r="10" fill="url(#dotGrad)"/>
-          <defs>
-            <linearGradient id="logoGrad" x1="0" y1="0" x2="100" y2="100">
-              <stop offset="0%" stop-color="#1e56a0"/>
-              <stop offset="100%" stop-color="#4da3ff"/>
-            </linearGradient>
-            <radialGradient id="dotGrad" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#4da3ff"/>
-              <stop offset="100%" stop-color="#2d7dd2"/>
-            </radialGradient>
-          </defs>
-        </svg>
-        <span class="header__logo-text">Fix<span>Core</span></span>
-      </a>
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#hero" class="header__logo" id="logo">
+      <svg class="header__logo-icon" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="url(#logoGrad)" stroke-width="7" stroke-linejoin="round"/>
+        <polygon points="50,22 78,38 78,62 50,78 22,62 22,38" fill="none" stroke="url(#logoGrad)" stroke-width="5" stroke-linejoin="round" opacity="0.5"/>
+        <circle cx="50" cy="50" r="10" fill="url(#dotGrad)"/>
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="100" y2="100">
+            <stop offset="0%" stop-color="#1e56a0"/>
+            <stop offset="100%" stop-color="#4da3ff"/>
+          </linearGradient>
+          <radialGradient id="dotGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#4da3ff"/>
+            <stop offset="100%" stop-color="#2d7dd2"/>
+          </radialGradient>
+        </defs>
+      </svg>
+      <span class="header__logo-text">Fix<span>Core</span></span>
+    </a>
 
-      <nav class="header__nav" id="mainNav">
-        <a href="#features">Características</a>
-        <a href="#solutions">Soluciones</a>
-        <a href="#pricing">Precios</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+    <nav class="header__nav" id="mainNav">
+      <a href="#features">Características</a>
+      <a href="#solutions">Soluciones</a>
+      <a href="#pricing">Precios</a>
+      <a href="#faq">FAQ</a>
+    </nav>
 
-      <div class="header__actions">
-        <div class="lang-toggle">
-          <a href="./index.html" class="lang-toggle__btn active" onclick="saveScroll()">ES</a>
-          <a href="./index-en.html" class="lang-toggle__btn" onclick="saveScroll()">EN</a>
-        </div>
+    <div class="header__actions">
+      <div class="lang-toggle">
+        <a href="./index.html" class="lang-toggle__btn active" onclick="saveScroll()">ES</a>
+        <a href="./index-en.html" class="lang-toggle__btn" onclick="saveScroll()">EN</a>
       </div>
-
-      <button class="header__mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </header>
 
+    <button type="button" class="header__mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
   <section class="hero" id="hero">
     <div class="container hero__inner">
       <div class="hero__content">
@@ -67,21 +78,21 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M8 1L10.2 5.5L15 6.2L11.5 9.6L12.4 14.3L8 12L3.6 14.3L4.5 9.6L1 6.2L5.8 5.5L8 1Z" fill="currentColor"/>
           </svg>
-          +50 plantas industriales ya optimizan sus operaciones
+          Proyecto académico de mantenimiento industrial
         </div>
 
         <h1 class="hero__title">
-          Elimina los <span>tiempos muertos</span> en tu planta industrial.
+          Ayuda a reducir los <span>tiempos muertos</span> en tu planta industrial.
         </h1>
 
         <p class="hero__subtitle">
-          Digitaliza tus órdenes de trabajo, gestiona repuestos y recibe alertas en WhatsApp. La plataforma SaaS que técnicos y jefes de planta aman usar.
+          Conoce FixCore, un proyecto web para centralizar activos, órdenes de trabajo y repuestos del mantenimiento industrial.
         </p>
 
         <div class="hero__cta">
           <a href="#pricing" class="btn btn--primary btn--lg" id="heroPrimaryBtn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-            Prueba Gratis
+            Ver Planes
           </a>
           <a href="#how-it-works" class="btn btn--secondary btn--lg" id="heroSecondaryBtn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -90,32 +101,25 @@
         </div>
 
         <div class="hero__social-proof">
-          <div class="hero__stars">
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <span class="hero__stars-text">4.9/5 de +120 reviews</span>
-          </div>
+          <div class="hero__stars"><span class="hero__stars-text">Propuesta basada en entrevistas</span></div>
 
           <div class="hero__logos">
-            <span>Confían en nosotros:</span>
+            <span>Pensado para:</span>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              InduPro
+              Pymes
             </div>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-              SolMex
+              B2B
             </div>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3l-4 4-4-4"/></svg>
-              AceroVit
+              Campo
             </div>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-              MetalCorp
+              Plantas
             </div>
           </div>
         </div>
@@ -131,23 +135,23 @@
       </div>
     </div>
   </section>
-   <section class="stats-bar" id="stats">
+  <section class="stats-bar" id="stats">
     <div class="container stats-bar__inner">
       <div class="stats-bar__item animate-on-scroll">
-        <div class="stats-bar__number"><span data-count="30">0</span>%</div>
-        <div class="stats-bar__label">Reducción de MTTR</div>
+        <div class="stats-bar__number"><span data-count="3">0</span></div>
+        <div class="stats-bar__label">Segmentos objetivo</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
-        <div class="stats-bar__number">+<span data-count="10000">0</span></div>
-        <div class="stats-bar__label">OTs Resueltas</div>
+        <div class="stats-bar__number"><span data-count="6">0</span></div>
+        <div class="stats-bar__label">Módulos propuestos</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
-        <div class="stats-bar__number"><span data-count="99">0</span>%</div>
-        <div class="stats-bar__label">Disponibilidad de Activos</div>
+        <div class="stats-bar__number"><span data-count="2">0</span></div>
+        <div class="stats-bar__label">Tipos de mantenimiento</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
-        <div class="stats-bar__number"><span data-count="0" data-fixed="true">0</span></div>
-        <div class="stats-bar__label">Papel Utilizado</div>
+        <div class="stats-bar__number"><span data-count="1">0</span></div>
+        <div class="stats-bar__label">Plataforma web</div>
       </div>
     </div>
   </section>
@@ -164,7 +168,7 @@
       </div>
 
       <div class="features__grid">
-        
+
         <div class="feature-card animate-on-scroll" id="featureQR">
           <div class="feature-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -173,10 +177,10 @@
             </svg>
           </div>
           <h3 class="feature-card__title">Reportes por QR</h3>
-          <p class="feature-card__desc">Escanea y reporta fallas en menos de 3 clics desde cualquier smartphone. Sin descargar apps.</p>
+          <p class="feature-card__desc">Reporta fallas desde un navegador móvil mediante códigos QR, sin instalar una aplicación nativa.</p>
         </div>
 
-        
+
         <div class="feature-card animate-on-scroll" id="featureAlerts">
           <div class="feature-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -184,10 +188,10 @@
             </svg>
           </div>
           <h3 class="feature-card__title">Alertas Automatizadas</h3>
-          <p class="feature-card__desc">Recibe notificaciones de paradas críticas directamente en WhatsApp (vía n8n). En tiempo real.</p>
+          <p class="feature-card__desc">Se contempla enviar alertas sobre fallas críticas, con posibles integraciones de mensajería.</p>
         </div>
 
-        
+
         <div class="feature-card animate-on-scroll" id="featureOTs">
           <div class="feature-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -198,7 +202,7 @@
           <p class="feature-card__desc">Asignación inteligente, check-lists de herramientas y cierre digital. Todo trazable.</p>
         </div>
 
-        
+
         <div class="feature-card animate-on-scroll" id="featureInventory">
           <div class="feature-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -270,7 +274,7 @@
     </div>
   </section>
 
-<section class="solutions section" id="solutions">
+  <section class="solutions section" id="solutions">
     <div class="container">
       <div class="text-center">
         <span class="section-badge">
@@ -299,7 +303,7 @@
           </div>
           <span class="solution-card__tag">Multi-Tenant</span>
           <h3 class="solution-card__title">Para Firmas Contratistas</h3>
-          <p class="solution-card__desc">Reportes white-label, ruteo de técnicos y gestión multi-tenant para escalar tu operación B2B.</p>
+          <p class="solution-card__desc">Gestión de clientes y coordinación de técnicos, con reportes personalizables como capacidad prevista.</p>
         </div>
 
         <!-- Card 3: Técnicos -->
@@ -321,51 +325,39 @@
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-          Testimonios
+          Necesidades identificadas
         </span>
-        <h2 class="section-title">Lo que dicen los líderes industriales.</h2>
-        <p class="section-subtitle">Empresas reales que transformaron su mantenimiento con FixCore.</p>
+        <h2 class="section-title">Lo que aprendimos de los usuarios.</h2>
+        <p class="section-subtitle">Síntesis de necesidades detectadas en entrevistas; no son testimonios de clientes.</p>
       </div>
 
       <div class="testimonials__grid">
         <!-- Testimonial 1 -->
         <div class="testimonial-card animate-on-scroll" id="testimonial1">
-          <div class="testimonial-card__stars">
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          </div>
+
           <p class="testimonial-card__quote">
-            Con FixCore dejé de hurgar en chats de WhatsApp a fin de mes. Todo está centralizado y las paradas se resuelven más rápido. Fue un antes y un después para nuestra operación.
+            En el mantenimiento de planta, la información distribuida entre WhatsApp, Excel y registros físicos dificulta consolidar reportes y dar seguimiento a las fallas.
           </p>
           <div class="testimonial-card__author">
-            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-carla.png" alt="Carla García" />
+            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-carla.png" alt="Ilustración de perfil de jefatura de planta" />
             <div>
-              <div class="testimonial-card__name">Carla García</div>
-              <div class="testimonial-card__role">Jefa de Planta — InduPro México</div>
+              <div class="testimonial-card__name">Jefatura de planta</div>
+              <div class="testimonial-card__role">Segmento de pymes manufactureras</div>
             </div>
           </div>
         </div>
 
         <!-- Testimonial 2 -->
         <div class="testimonial-card animate-on-scroll" id="testimonial2">
-          <div class="testimonial-card__stars">
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-          </div>
+
           <p class="testimonial-card__quote">
-            El portal multi-cliente nos permitió escalar. Ahora enviamos reportes automáticos con nuestro propio logo a las fábricas que atendemos. FixCore es nuestra ventaja competitiva.
+            Las empresas contratistas necesitan coordinar técnicos en diferentes plantas y mantener un historial organizado de los servicios prestados a sus clientes.
           </p>
           <div class="testimonial-card__author">
-            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-victor.png" alt="Víctor Salazar" />
+            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-victor.png" alt="Ilustración de perfil de coordinación de operaciones" />
             <div>
-              <div class="testimonial-card__name">Víctor Salazar</div>
-              <div class="testimonial-card__role">Gerente de Operaciones B2B — SolMex Servicios</div>
+              <div class="testimonial-card__name">Coordinación de operaciones</div>
+              <div class="testimonial-card__role">Segmento de empresas contratistas</div>
             </div>
           </div>
         </div>
@@ -378,17 +370,17 @@
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          Precios Transparentes
+          Planes propuestos
         </span>
         <h2 class="section-title">Planes diseñados para escalar contigo.</h2>
-        <p class="section-subtitle">Empieza gratis, crece cuando estés listo. Sin costos ocultos ni contratos de permanencia.</p>
+        <p class="section-subtitle">Opciones referenciales para validar el modelo de negocio. Esta página no procesa suscripciones ni pagos.</p>
       </div>
 
-      
+
       <div class="pricing__toggle">
-        <span class="pricing__toggle-label active" id="toggleMonthly" onclick="togglePricing('monthly')">Mensual</span>
-        <button class="pricing__toggle-switch" id="pricingSwitch" onclick="togglePricingSwitch()" aria-label="Cambiar entre mensual y anual"></button>
-        <span class="pricing__toggle-label" id="toggleAnnual" onclick="togglePricing('annual')">Anual</span>
+        <button type="button" class="pricing__toggle-label active" id="toggleMonthly" onclick="togglePricing('monthly')" aria-pressed="true">Mensual</button>
+        <button type="button" class="pricing__toggle-switch" id="pricingSwitch" onclick="togglePricingSwitch()" role="switch" aria-checked="false" aria-label="Cambiar entre facturación mensual y anual"></button>
+        <button type="button" class="pricing__toggle-label" id="toggleAnnual" onclick="togglePricing('annual')" aria-pressed="false">Anual</button>
         <span class="pricing__save-badge">Ahorra 20%</span>
       </div>
 
@@ -407,7 +399,7 @@
           <div class="pricing-card__price">
             <span class="pricing-card__amount pricing-card__amount--free">Gratis</span>
           </div>
-          <p class="pricing-card__period-note">Para siempre • Sin tarjeta de crédito</p>
+          <p class="pricing-card__period-note">Nivel gratuito propuesto • Sujeto a validación</p>
 
           <div class="pricing-card__divider"></div>
 
@@ -442,8 +434,8 @@
             </li>
           </ul>
 
-          <a href="#pricing" class="pricing-card__cta pricing-card__cta--outline" id="ctaFree">
-            Comenzar Gratis
+          <a href="#demo" class="pricing-card__cta pricing-card__cta--outline" id="ctaFree">
+            Ver propuesta
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -465,8 +457,8 @@
             <span class="pricing-card__period">USD / mes</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Facturado anualmente ($852/año)</span>
-            <span class="pricing-monthly-note">≈ S/ 330 al mes • Facturación mensual</span>
+            <span class="pricing-annual-note" style="display:none;">Facturación anual referencial ($852/año)</span>
+            <span class="pricing-monthly-note">Referencia mensual en USD</span>
           </p>
 
           <div class="pricing-card__divider"></div>
@@ -506,8 +498,8 @@
             </li>
           </ul>
 
-          <a href="#pricing" class="pricing-card__cta pricing-card__cta--primary" id="ctaPlant">
-            Suscribirse Ahora
+          <a href="#demo" class="pricing-card__cta pricing-card__cta--primary" id="ctaPlant">
+            Ver propuesta
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -528,7 +520,7 @@
             <span class="pricing-card__period">USD / técnico / mes</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Facturado anualmente por técnico ($276/técnico/año)</span>
+            <span class="pricing-annual-note" style="display:none;">Facturación anual referencial ($276/técnico/año)</span>
             <span class="pricing-monthly-note">Clientes y plantas ilimitadas incluidas</span>
           </p>
 
@@ -569,8 +561,8 @@
             </li>
           </ul>
 
-          <a href="#pricing" class="pricing-card__cta pricing-card__cta--orange" id="ctaContractor">
-            Suscribirse Ahora
+          <a href="#demo" class="pricing-card__cta pricing-card__cta--orange" id="ctaContractor">
+            Ver propuesta
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -580,7 +572,7 @@
       <!-- Guarantee -->
       <div class="pricing__guarantee animate-on-scroll">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        14 días de prueba gratuita en todos los planes de pago • Sin tarjeta de crédito • Cancela cuando quieras
+        Precios referenciales • Sujeto a validación • Sin contratación desde esta página
       </div>
     </div>
   </section>
@@ -593,118 +585,117 @@
           Preguntas Frecuentes
         </span>
         <h2 class="section-title">¿Tienes preguntas sobre FixCore?</h2>
-        <p class="section-subtitle">Respuestas rápidas a las dudas más comunes de nuestros clientes.</p>
+        <p class="section-subtitle">Respuestas sobre la propuesta y sus funcionalidades previstas.</p>
       </div>
 
       <div class="faq__list">
         <div class="faq-item active" id="faq1">
-          <div class="faq-item__header" onclick="toggleFaq(this)">
+          <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="true" aria-controls="faqAnswer1">
             <span class="faq-item__question">¿Necesito instalar hardware especial?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
-          </div>
-          <div class="faq-item__body">
-            <p class="faq-item__answer">No. FixCore es 100% SaaS y funciona en la nube. Solo necesitas un smartphone o tablet para escanear los códigos QR que puedes imprimir con cualquier impresora. No requieres sensores IoT ni infraestructura especial para comenzar.</p>
+          </button>
+          <div class="faq-item__body" id="faqAnswer1">
+            <p class="faq-item__answer">No está previsto que se requieran sensores IoT ni hardware especializado. FixCore se plantea como una aplicación web accesible desde computadoras y dispositivos móviles.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq2">
-          <div class="faq-item__header" onclick="toggleFaq(this)">
+          <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faqAnswer2">
             <span class="faq-item__question">¿Cómo funciona el cobro por técnico en campo?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
-          </div>
-          <div class="faq-item__body">
-            <p class="faq-item__answer">Nuestro modelo es por licencia de técnico activo en campo. Los operarios que solo reportan fallas (escanean QR) no cuentan como licencia. Solo pagas por los técnicos que reciben y cierran Órdenes de Trabajo. Incluimos usuarios gerenciales ilimitados.</p>
+          </button>
+          <div class="faq-item__body" id="faqAnswer2">
+            <p class="faq-item__answer">La propuesta de precios contempla licencias por técnico activo. Los operarios dedicados únicamente a reportar fallas no se contabilizarían como técnicos de pago. Las condiciones definitivas aún deben validarse.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq3">
-          <div class="faq-item__header" onclick="toggleFaq(this)">
+          <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faqAnswer3">
             <span class="faq-item__question">¿Es difícil que los operarios mayores aprendan a usarlo?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
-          </div>
-          <div class="faq-item__body">
-            <p class="faq-item__answer">FixCore fue diseñado pensando en operarios de todas las edades. El flujo de reporte es de solo 3 clics: escanear, seleccionar tipo de falla y enviar. No requiere crear cuenta ni recordar contraseñas. Nuestros clientes reportan adopción completa en menos de una semana.</p>
+          </button>
+          <div class="faq-item__body" id="faqAnswer3">
+            <p class="faq-item__answer">La propuesta busca facilitar el uso desde dispositivos móviles con pasos sencillos para reportar fallas. La facilidad de uso se evaluará con pruebas y retroalimentación de usuarios.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq4">
-          <div class="faq-item__header" onclick="toggleFaq(this)">
+          <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faqAnswer4">
             <span class="faq-item__question">¿Puedo integrar FixCore con mi ERP actual?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
-          </div>
-          <div class="faq-item__body">
-            <p class="faq-item__answer">Sí. Ofrecemos una API REST documentada y webhooks configurables que puedes conectar a SAP, Oracle, Microsoft Dynamics o cualquier otro ERP. También soportamos integración vía n8n y Zapier para automatizaciones sin código.</p>
+          </button>
+          <div class="faq-item__body" id="faqAnswer4">
+            <p class="faq-item__answer">La integración mediante API REST y webhooks forma parte de las capacidades previstas. Su disponibilidad y compatibilidad con ERP se confirmarán durante el desarrollo.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
- 
+
   <section class="bottom-cta" id="demo">
     <div class="container bottom-cta__inner">
-      <h2 class="bottom-cta__title animate-on-scroll">¿Listo para proteger tus bienes de capital?</h2>
-      <p class="bottom-cta__subtitle animate-on-scroll">Únete a las empresas que ya redujeron sus tiempos muertos con FixCore.</p>
-      <a href="#" class="btn btn--green btn--lg animate-on-scroll" id="bottomCtaBtn">
+      <h2 class="bottom-cta__title animate-on-scroll">¿Quieres conocer el proyecto FixCore?</h2>
+      <p class="bottom-cta__subtitle animate-on-scroll">Conoce la propuesta y consulta sus avances en GitHub.</p>
+      <a href="https://github.com/TechMakers-upc/Landing-Page" target="_blank" rel="noopener noreferrer" class="btn btn--green btn--lg animate-on-scroll" id="bottomCtaBtn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-        Comienza tu Prueba Gratuita
+        Ver proyecto en GitHub
       </a>
-      <p class="bottom-cta__fine-print animate-on-scroll">Sin tarjeta de crédito requerida • Piloto en 3 máquinas • Cancela cuando quieras</p>
+      <p class="bottom-cta__fine-print animate-on-scroll">Proyecto académico en desarrollo • No se realizan pagos ni registros desde esta página</p>
     </div>
   </section>
 
 
-  <footer class="footer" id="footer">
-    <div class="container footer__inner">
-      <a href="#" class="footer__logo">
-        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="url(#footLogoGrad)" stroke-width="7" stroke-linejoin="round"/>
-          <circle cx="50" cy="50" r="10" fill="#4da3ff"/>
-          <defs>
-            <linearGradient id="footLogoGrad" x1="0" y1="0" x2="100" y2="100">
-              <stop offset="0%" stop-color="#4da3ff"/>
-              <stop offset="100%" stop-color="#8ec5ff"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <span>FixCore</span>
-      </a>
+</main>
+<footer class="footer" id="footer">
+  <div class="container footer__inner">
+    <a href="#hero" class="footer__logo">
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="url(#footLogoGrad)" stroke-width="7" stroke-linejoin="round"/>
+        <circle cx="50" cy="50" r="10" fill="#4da3ff"/>
+        <defs>
+          <linearGradient id="footLogoGrad" x1="0" y1="0" x2="100" y2="100">
+            <stop offset="0%" stop-color="#4da3ff"/>
+            <stop offset="100%" stop-color="#8ec5ff"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>FixCore</span>
+    </a>
 
-      <nav class="footer__links">
-        <a href="#" id="footerSupport">Soporte</a>
-        <a href="#" id="footerAPI">API / Webhooks</a>
-        <a href="#" id="footerPrivacy">Política de Privacidad</a>
-        <a href="#" id="footerTerms">Términos B2B</a>
-      </nav>
+    <nav class="footer__links">
+      <a href="https://github.com/TechMakers-upc" target="_blank" rel="noopener noreferrer" id="footerSupport">Equipo TechMakers</a>
+      <a href="https://github.com/TechMakers-upc/Report" target="_blank" rel="noopener noreferrer" id="footerAPI">Documentación</a>
+      <a href="privacidad.html" id="footerPrivacy">Política de privacidad</a>
+      <a href="terminos.html" id="footerTerms">Términos y condiciones</a>
+    </nav>
 
-      <span class="footer__copy">&copy; 2026 FixCore. Todos los derechos reservados.</span>
-    </div>
-  </footer>
-  <script>
+    <span class="footer__copy">&copy; 2026 FixCore. Todos los derechos reservados.</span>
+  </div>
+</footer>
+<script>
 
 
   function saveScroll() {
-    sessionStorage.setItem('langScroll', window.scrollY);
+    try { sessionStorage.setItem('langScroll', String(window.scrollY)); } catch (error) { /* Storage may be disabled. */ }
   }
 
   window.addEventListener('DOMContentLoaded', () => {
-    const savedScroll = sessionStorage.getItem('langScroll');
-
-    if (savedScroll !== null) {
-      window.scrollTo({
-        top: parseInt(savedScroll, 10),
-        behavior: 'instant'
-      });
-
+    let savedScroll = null;
+    try {
+      savedScroll = sessionStorage.getItem('langScroll');
       sessionStorage.removeItem('langScroll');
+    } catch (error) { return; }
+    if (savedScroll !== null && !Number.isNaN(Number(savedScroll))) {
+      window.scrollTo({ top: Number(savedScroll), behavior: 'auto' });
     }
   });
 
@@ -730,6 +721,7 @@
 
   mobileToggle.addEventListener('click', () => {
     mainNav.classList.toggle('active');
+    mobileToggle.setAttribute('aria-expanded', String(mainNav.classList.contains('active')));
 
     const spans = mobileToggle.querySelectorAll('span');
 
@@ -744,11 +736,16 @@
     }
   });
 
- 
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
 
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      if (!href || href === '#') {
+        e.preventDefault();
+        return;
+      }
+      const target = document.getElementById(href.slice(1));
 
       if (target) {
         e.preventDefault();
@@ -758,8 +755,9 @@
           block: 'start'
         });
 
-  
+
         mainNav.classList.remove('active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
 
         const spans = mobileToggle.querySelectorAll('span');
 
@@ -805,11 +803,11 @@
         counters.forEach(counter => {
 
           const target = parseInt(
-            counter.getAttribute('data-count')
+                  counter.getAttribute('data-count')
           );
 
           const isFixed =
-            counter.getAttribute('data-fixed') === 'true';
+                  counter.getAttribute('data-fixed') === 'true';
 
           if (isFixed) {
             counter.textContent = '0';
@@ -827,14 +825,14 @@
             if (current < target) {
 
               counter.textContent =
-                Math.ceil(current).toLocaleString('es-MX');
+                      Math.ceil(current).toLocaleString('es-MX');
 
               requestAnimationFrame(updateCounter);
 
             } else {
 
               counter.textContent =
-                target.toLocaleString('es-MX');
+                      target.toLocaleString('es-MX');
 
             }
           };
@@ -874,13 +872,16 @@
   function updatePricingUI() {
 
     const switchEl =
-      document.getElementById('pricingSwitch');
+            document.getElementById('pricingSwitch');
+    switchEl.setAttribute('aria-checked', String(isAnnual));
 
     const monthlyLabel =
-      document.getElementById('toggleMonthly');
+            document.getElementById('toggleMonthly');
 
     const annualLabel =
-      document.getElementById('toggleAnnual');
+            document.getElementById('toggleAnnual');
+    monthlyLabel.setAttribute('aria-pressed', String(!isAnnual));
+    annualLabel.setAttribute('aria-pressed', String(isAnnual));
 
     // Cambiar estado del switch
     if (isAnnual) {
@@ -899,55 +900,55 @@
 
     }
 
-    
-    document
-      .querySelectorAll('.pricing-card__amount[data-monthly]')
-      .forEach(el => {
-
-        const monthly =
-          el.getAttribute('data-monthly');
-
-        const annual =
-          el.getAttribute('data-annual');
-
-        const target =
-          isAnnual ? annual : monthly;
-
-        el.style.transition =
-          'opacity 0.2s, transform 0.2s';
-
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(-8px)';
-
-        setTimeout(() => {
-
-          el.textContent = target;
-
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-
-        }, 200);
-
-      });
-
-    
-    document
-      .querySelectorAll('.pricing-annual-note')
-      .forEach(el => {
-
-        el.style.display =
-          isAnnual ? 'inline' : 'none';
-
-      });
 
     document
-      .querySelectorAll('.pricing-monthly-note')
-      .forEach(el => {
+            .querySelectorAll('.pricing-card__amount[data-monthly]')
+            .forEach(el => {
 
-        el.style.display =
-          isAnnual ? 'none' : 'inline';
+              const monthly =
+                      el.getAttribute('data-monthly');
 
-      });
+              const annual =
+                      el.getAttribute('data-annual');
+
+              const target =
+                      isAnnual ? annual : monthly;
+
+              el.style.transition =
+                      'opacity 0.2s, transform 0.2s';
+
+              el.style.opacity = '0';
+              el.style.transform = 'translateY(-8px)';
+
+              setTimeout(() => {
+
+                el.textContent = target;
+
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+
+              }, 200);
+
+            });
+
+
+    document
+            .querySelectorAll('.pricing-annual-note')
+            .forEach(el => {
+
+              el.style.display =
+                      isAnnual ? 'inline' : 'none';
+
+            });
+
+    document
+            .querySelectorAll('.pricing-monthly-note')
+            .forEach(el => {
+
+              el.style.display =
+                      isAnnual ? 'none' : 'inline';
+
+            });
 
   }
 
@@ -957,19 +958,21 @@
     const faqItem = headerEl.parentElement;
 
     const isActive =
-      faqItem.classList.contains('active');
+            faqItem.classList.contains('active');
 
     document.querySelectorAll('.faq-item').forEach(item => {
       item.classList.remove('active');
+      item.querySelector('.faq-item__header').setAttribute('aria-expanded', 'false');
     });
 
     if (!isActive) {
       faqItem.classList.add('active');
+      headerEl.setAttribute('aria-expanded', 'true');
     }
 
   }
 
 </script>
-  
-</body>  
+
+</body>
 </html>

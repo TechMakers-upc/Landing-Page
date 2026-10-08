@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Información sobre el tratamiento de datos en este sitio estático" />
+    <title>Política de privacidad — FixCore</title>
+    <link rel="stylesheet" href="public/assets/styles/style.css" />
+    <link rel="icon" href="favicon.ico" />
+
+    <style>
+        .legal-hero {
+            padding: 8rem 0 3rem;
+            background: linear-gradient(180deg, var(--blue-50), var(--white));
+        }
+        .legal-hero h1 {
+            color: var(--gray-900);
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: .7rem;
+        }
+        .legal-hero p {
+            color: var(--gray-600);
+            font-size: 1rem;
+            max-width: 750px;
+        }
+        .legal-content { padding: 1rem 0 5rem; }
+        .legal-content article { max-width: 850px; margin: auto; }
+        .legal-content section {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .legal-content h2 {
+            color: var(--blue-700);
+            font-size: 1.18rem;
+            margin-bottom: .5rem;
+        }
+        .legal-content p {
+            color: var(--gray-700);
+            line-height: 1.8;
+        }
+        .legal-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .legal-header {
+            background: white;
+            border-bottom: 1px solid var(--gray-200);
+            padding: 1rem 0;
+        }
+        .legal-header__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .legal-header__inner a {
+            color: var(--blue-600);
+            font-weight: 600;
+        }
+        .legal-footer {
+            background: var(--gray-900);
+            color: var(--gray-200);
+            padding: 1.6rem 0;
+        }
+        .legal-footer a {
+            color: var(--blue-200);
+            text-decoration: underline;
+        }
+        a:focus-visible {
+            outline: 3px solid var(--blue-400);
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="legal-header">
+    <div class="container legal-header__inner">
+        <a href="index.html" aria-label="Volver al inicio">← Volver a FixCore</a>
+        <nav aria-label="Idioma">
+            <a href="privacidad.html" aria-current="page">ES</a>
+            <span aria-hidden="true"> / </span>
+            <a href="privacy-en.html">EN</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="legal-hero">
+        <div class="container">
+            <h1>Política de privacidad</h1>
+            <p>Información sobre el tratamiento de datos en este sitio estático</p>
+        </div>
+    </div>
+
+    <div class="legal-content">
+        <div class="container">
+            <article>
+                <section>
+                    <h2>1. Alcance</h2>
+                    <p>Esta política describe la página informativa de FixCore, un proyecto académico en desarrollo. No describe un servicio comercial de producción.</p>
+                </section>
+
+                <section>
+                    <h2>2. Información solicitada</h2>
+                    <p>La versión actual del sitio no contiene formularios de registro, pago o contacto y no solicita información personal directamente a través de ellos.</p>
+                </section>
+
+                <section>
+                    <h2>3. Almacenamiento local</h2>
+                    <p>El selector de idioma usa sessionStorage para conservar temporalmente la posición de desplazamiento al cambiar de idioma. No se utiliza para identificarte ni elaborar perfiles.</p>
+                </section>
+
+                <section>
+                    <h2>4. Servicios de terceros</h2>
+                    <p>El sitio carga tipografías mediante Google Fonts y puede alojarse en GitHub Pages. Estos proveedores podrían procesar datos técnicos de conexión, como direcciones IP y registros de acceso, conforme a sus propias políticas.</p>
+                </section>
+
+                <section>
+                    <h2>5. Enlaces externos</h2>
+                    <p>Al abrir un enlace a GitHub u otro sitio, estarás sujeto a la política de privacidad del proveedor externo.</p>
+                </section>
+
+                <section>
+                    <h2>6. Cambios y consultas</h2>
+                    <p>Esta información puede actualizarse conforme evolucione el proyecto. Puedes consultar los repositorios públicos de TechMakers en <a href="https://github.com/TechMakers-upc" target="_blank" rel="noopener noreferrer">https://github.com/TechMakers-upc</a>.</p>
+                </section>
+
+                <div class="legal-actions">
+                    <a href="index.html" class="btn btn--primary">Regresar al inicio</a>
+                    <a href="terminos.html" class="btn btn--secondary">Términos y condiciones</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+
+<footer class="legal-footer">
+    <div class="container">
+        © 2026 FixCore — TechMakers · Documento informativo para un proyecto académico.
+    </div>
+</footer>
+</body>
+</html>
