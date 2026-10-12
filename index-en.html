@@ -402,23 +402,33 @@
         <div class="pricing-card animate-on-scroll" id="planFree">
           <div class="pricing-card__header">
             <div class="pricing-card__icon pricing-card__icon--free">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="3"/>
+                  <path d="M2 10h20"/>
+                  <path d="M6 15h4"/>
+              </svg>
             </div>
-            <h3 class="pricing-card__name">Starter</h3>
-            <p class="pricing-card__desc">An entry-level option proposed for validating the platform before wider adoption.</p>
+            <h3 class="pricing-card__name">Basic</h3>
+            <p class="pricing-card__desc">An affordable subscription offering the essential features FixCore has to offer for individuals getting started.</p>
           </div>
 
           <div class="pricing-card__price">
-            <span class="pricing-card__amount pricing-card__amount--free">Free</span>
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount" data-monthly="39" data-annual="29">39</span>
+            <span class="pricing-card__period">USD / month</span>
           </div>
-          <p class="pricing-card__period-note">Proposed free tier • Subject to validation</p>
+          <p class="pricing-card__period-note">
+            <span class="pricing-annual-note" style="display:none;">Illustrative annual billing ($348/year)</span>
+            <span class="pricing-monthly-note">Monthly reference price in USD</span>
+          </p>
 
           <div class="pricing-card__divider"></div>
 
           <ul class="pricing-card__features">
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Up to 3 critical machines
+              Up to 10 critical machines
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -426,7 +436,7 @@
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              1 technician user
+              5 technician users
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -434,10 +444,10 @@
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              30-day history
+              60-day history
             </li>
-            <li class="pricing-card__feature pricing-card__feature--excluded">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
               WhatsApp Alerts
             </li>
             <li class="pricing-card__feature pricing-card__feature--excluded">
