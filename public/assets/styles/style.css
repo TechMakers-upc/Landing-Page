@@ -1656,6 +1656,22 @@ ul, ol {
 }
 
 
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #ffffff;
+  border: 1px dashed #312f2f;
+  border-radius: 8px;
+}
 
 
 /* =========================================================
