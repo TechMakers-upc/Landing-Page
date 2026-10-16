@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FixCore — CMMS Platform for Industrial Maintenance Management</title>
-  <meta name="description" content="Explore FixCore, a web project for managing industrial maintenance assets, work orders, and spare parts." />
+  <meta name="description" content="Organize assets, work orders, preventive maintenance and spare parts with FixCore, the industrial maintenance platform." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,15 +49,25 @@
 
     <nav class="header__nav" id="mainNav">
       <a href="#features">Features</a>
+      <a href="#technology">Technology</a>
       <a href="#solutions">Solutions</a>
+      <a href="#team">Team</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
+      <div class="header__nav-auth">
+        <a class="header__auth-link" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Log in</a>
+        <a class="header__auth-button" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Create account</a>
+      </div>
     </nav>
 
     <div class="header__actions">
       <div class="lang-toggle">
         <a href="./index-es.html" class="lang-toggle__btn" onclick="saveScroll()">ES</a>
         <a href="./index.html" class="lang-toggle__btn active" onclick="saveScroll()">EN</a>
+      </div>
+      <div class="header__auth">
+        <a class="header__auth-link" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Log in</a>
+        <a class="header__auth-button" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Create account</a>
       </div>
     </div>
 
@@ -74,19 +84,12 @@
     <div class="container hero__inner">
       <div class="hero__content">
 
-        <div class="hero__badge">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M8 1L10.2 5.5L15 6.2L11.5 9.6L12.4 14.3L8 12L3.6 14.3L4.5 9.6L1 6.2L5.8 5.5L8 1Z" fill="currentColor"/>
-          </svg>
-          Academic industrial maintenance project
-        </div>
-
         <h1 class="hero__title">
           Help reduce <span>unplanned downtime</span> at your industrial plant.
         </h1>
 
         <p class="hero__subtitle">
-          Explore FixCore, a web project for managing industrial maintenance assets, work orders, and spare parts.
+          Keep your equipment records, work orders and spare parts organized in one industrial maintenance platform.
         </p>
 
         <div class="hero__cta">
@@ -101,7 +104,7 @@
         </div>
 
         <div class="hero__social-proof">
-          <div class="hero__stars"><span class="hero__stars-text">Based on user interviews</span></div>
+          <div class="hero__stars"><span class="hero__stars-text">Built around maintenance workflows</span></div>
 
           <div class="hero__logos">
             <span>Designed for:</span>
@@ -144,7 +147,7 @@
       </div>
       <div class="stats-bar__item animate-on-scroll">
         <div class="stats-bar__number"><span data-count="6">0</span></div>
-        <div class="stats-bar__label">Proposed modules</div>
+        <div class="stats-bar__label">Management areas</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
         <div class="stats-bar__number"><span data-count="2">0</span></div>
@@ -158,81 +161,41 @@
   </section>
 
 
-  <section class="features section" id="features">
+  <section class="features section feature-explorer" id="features">
     <div class="container">
       <div class="text-center">
-        <span class="section-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Features
-        </span>
-        <h2 class="section-title">A frictionless maintenance experience.</h2>
-        <p class="section-subtitle">Every module is designed to eliminate paperwork, reduce errors, and speed up issue resolution.</p>
+        <span class="section-badge">Features</span>
+        <h2 class="section-title">Everything your maintenance team needs, in one place.</h2>
+        <p class="section-subtitle">Explore the areas of FixCore and see how they support your workflow.</p>
       </div>
-
-      <div class="features__grid">
-
-        <div class="feature-card animate-on-scroll" id="featureQR">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/>
-              <rect x="2" y="14" width="8" height="8" rx="1"/><path d="M14 14h3v3"/><path d="M20 14v3h-3"/><path d="M14 20h6"/><path d="M20 20v-3"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">QR Reporting</h3>
-          <p class="feature-card__desc">Report equipment issues through QR codes in a mobile browser, without installing a native app.</p>
+      <div class="feature-explorer__layout">
+        <div class="feature-explorer__tabs" role="tablist" aria-label="Explore features">
+          <button type="button" class="feature-select is-active" id="featureTab0" role="tab" aria-selected="true" aria-controls="featurePanel" tabindex="0" data-feature="0">
+            <span class="feature-select__number">01</span><span class="feature-select__title">Assets and equipment records</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab1" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="1">
+            <span class="feature-select__number">02</span><span class="feature-select__title">Work orders</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab2" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="2">
+            <span class="feature-select__number">03</span><span class="feature-select__title">Preventive maintenance</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab3" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="3">
+            <span class="feature-select__number">04</span><span class="feature-select__title">Spare parts inventory</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab4" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="4">
+            <span class="feature-select__number">05</span><span class="feature-select__title">Field reporting</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab5" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="5">
+            <span class="feature-select__number">06</span><span class="feature-select__title">Dashboards and insights</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
         </div>
-
-        <div class="feature-card animate-on-scroll" id="featureAlerts">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Automated Alerts</h3>
-          <p class="feature-card__desc">The concept includes critical-failure alerts, with messaging integrations under consideration.</p>
-        </div>
-
-        <div class="feature-card animate-on-scroll" id="featureOTs">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Work Order Management</h3>
-          <p class="feature-card__desc">Smart assignment, tool checklists, and digital closure. Everything is traceable.</p>
-        </div>
-
-        <div class="feature-card animate-on-scroll" id="featureInventory">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Inventory Control</h3>
-          <p class="feature-card__desc">Real-time stock deduction and automatic restocking alerts.</p>
-        </div>
-
-        <div class="feature-card animate-on-scroll" id="featureMultiPlant">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/>
-              <path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 14h.01"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Multi-Plant Architecture</h3>
-          <p class="feature-card__desc">Unified portal ideal for contractors managing multiple clients.</p>
-        </div>
-
-        <div class="feature-card animate-on-scroll" id="featureReports">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
-              <line x1="2" y1="20" x2="22" y2="20"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Management Reports</h3>
-          <p class="feature-card__desc">Automatic MTTR and availability calculations in one click. Data-driven decisions.</p>
+        <div class="feature-explorer__panel" id="featurePanel" role="tabpanel" aria-labelledby="featureTab0" tabindex="0">
+          <span class="feature-explorer__eyebrow" id="featureCategory">Assets</span>
+          <div class="feature-explorer__symbol" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+          <h3 id="featureTitle">Assets and equipment records</h3>
+          <p id="featureDescription">Bring machinery details, manuals, locations and maintenance history together in one place.</p>
+          <ul class="feature-explorer__points" id="featurePoints"><li>Technical information in one place</li><li>Maintenance history by asset</li><li>Browser-based access</li></ul>
+          <a class="feature-explorer__link" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Explore FixCore <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </div>
@@ -271,6 +234,22 @@
     </div>
   </section>
 
+  <section class="section technology" id="technology">
+    <div class="container technology__layout">
+      <div class="technology__copy">
+        <span class="section-badge">Technology</span>
+        <h2 class="section-title">More control. Less complexity.</h2>
+        <p>FixCore connects equipment records, work orders and spare parts information into an organized maintenance workflow. Access it from a computer or mobile device without scattered records.</p>
+        <ul class="technology__benefits"><li>Responsive web platform for every screen</li><li>Centralized asset and maintenance data</li><li>A clear workflow from reporting to follow-up</li></ul>
+      </div>
+      <div class="tech-flow" aria-label="Maintenance workflow">
+        <div class="tech-flow__top"><span class="tech-flow__topmark"></span><span>Maintenance workflow</span><span class="tech-flow__online" aria-hidden="true">●</span></div>
+        <div class="tech-flow__steps">              <div class="tech-flow__step"><span class="tech-flow__num">01</span><div><strong>Report</strong><small>Register an issue</small></div></div>              <div class="tech-flow__step"><span class="tech-flow__num">02</span><div><strong>Organize</strong><small>Manage the work order</small></div></div>              <div class="tech-flow__step"><span class="tech-flow__num">03</span><div><strong>Resolve</strong><small>Record the intervention</small></div></div>              <div class="tech-flow__step"><span class="tech-flow__num">04</span><div><strong>Analyze</strong><small>Review maintenance history</small></div></div></div>
+        <p class="tech-flow__footer">One connected workflow, better organized information.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="solutions section" id="solutions">
     <div class="container">
       <div class="text-center">
@@ -299,7 +278,7 @@
           </div>
           <span class="solution-card__tag">Multi-Tenant</span>
           <h3 class="solution-card__title">For Contractor Firms</h3>
-          <p class="solution-card__desc">Client management and technician coordination, with customizable reports as a planned capability.</p>
+          <p class="solution-card__desc">Coordinate clients, technicians and maintenance work across multiple sites in one place.</p>
         </div>
 
         <div class="solution-card solution-card--dark animate-on-scroll" id="solutionTech">
@@ -321,8 +300,8 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           Identified Needs
         </span>
-        <h2 class="section-title">What we learned from users.</h2>
-        <p class="section-subtitle">Insights from user interviews, not customer endorsements.</p>
+        <h2 class="section-title">Less friction across your operation.</h2>
+        <p class="section-subtitle">Keep maintenance work moving without scattered messages, spreadsheets and paper records.</p>
       </div>
 
       <div class="testimonials__grid">
@@ -358,15 +337,57 @@
     </div>
   </section>
 
+  <section class="section section--light team" id="team">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">Our team</span>
+        <h2 class="section-title">Meet TechMakers.</h2>
+        <p class="section-subtitle">A team bringing web development, design and technology together to build FixCore.</p>
+      </div>
+      <div class="team__grid">
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-alvar.jpg" alt="Alvar Lucas Córdova" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Alvar Lucas Córdova</h3>
+          <p class="team-card__role">Web development &amp; coordination</p>
+          <p class="team-card__bio">Works with HTML, CSS, JavaScript, Vue and .NET, combining web development skills with team coordination.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-sunio.jpg" alt="Sunio Danilo Landa Sánchez" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Sunio Danilo Landa Sánchez</h3>
+          <p class="team-card__role">Web development &amp; collaboration</p>
+          <p class="team-card__bio">Works with C++, JavaScript, HTML and CSS, using Git, GitHub and collaborative development practices.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-giuseppe.jpg" alt="Giuseppe Adrián Villanueva Rodríguez" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Giuseppe Adrián Villanueva Rodríguez</h3>
+          <p class="team-card__role">UI &amp; web development</p>
+          <p class="team-card__bio">Applies knowledge of Java, SQL, Angular and TypeScript to interface design and web development.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-diego.jpg" alt="Diego Rances Rojas Huaranga" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Diego Rances Rojas Huaranga</h3>
+          <p class="team-card__role">Applications &amp; web services</p>
+          <p class="team-card__bio">Works with C#, .NET, SQL, REST services and interface development using Vue, HTML and CSS.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-pierre.jpg" alt="Pierre Alessandro Mendoza Boluarte" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Pierre Alessandro Mendoza Boluarte</h3>
+          <p class="team-card__role">Design &amp; prototyping</p>
+          <p class="team-card__bio">Combines HTML, CSS, JavaScript and C++ with interface design and prototyping.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="pricing section" id="pricing">
     <div class="container">
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          Proposed Plans
+          FixCore plans
         </span>
-        <h2 class="section-title">Plans designed to scale with you.</h2>
-        <p class="section-subtitle">Illustrative options for validating the business model. This page does not process subscriptions or payments.</p>
+        <h2 class="section-title">Plans for every stage of your operation.</h2>
+        <p class="section-subtitle">Choose the plan that best fits your operation and team size.</p>
       </div>
 
       <div class="pricing__toggle">
@@ -389,7 +410,7 @@
               </svg>
             </div>
             <h3 class="pricing-card__name">Basic</h3>
-            <p class="pricing-card__desc">An affordable subscription offering the essential features FixCore has to offer for individuals getting started.</p>
+            <p class="pricing-card__desc">Essential features to organize equipment maintenance and keep operations on track.</p>
           </div>
 
           <div class="pricing-card__price">
@@ -398,7 +419,7 @@
             <span class="pricing-card__period">USD / month</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Illustrative annual billing ($348/year)</span>
+            <span class="pricing-annual-note" style="display:none;">Annual equivalent ($348/year)</span>
             <span class="pricing-monthly-note">Monthly reference price in USD</span>
           </p>
 
@@ -436,7 +457,7 @@
           </ul>
 
           <a href="https://fixcore-frontend-eight.vercel.app/start" class="pricing-card__cta pricing-card__cta--outline" id="ctaBasic">
-            Explore the Proposal
+            Explore plan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -457,7 +478,7 @@
             <span class="pricing-card__period">USD / month</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Illustrative annual billing ($852/year)</span>
+            <span class="pricing-annual-note" style="display:none;">Annual equivalent ($852/year)</span>
             <span class="pricing-monthly-note">Monthly reference price in USD</span>
           </p>
 
@@ -499,7 +520,7 @@
           </ul>
 
           <a href="https://fixcore-frontend-eight.vercel.app/start" class="pricing-card__cta pricing-card__cta--primary" id="ctaPlant">
-            Explore the Proposal
+            Explore plan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -519,7 +540,7 @@
             <span class="pricing-card__period">USD / technician / month</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Illustrative annual billing ($276/technician/year)</span>
+            <span class="pricing-annual-note" style="display:none;">Annual equivalent ($276/technician/year)</span>
             <span class="pricing-monthly-note">Unlimited clients and plants included</span>
           </p>
 
@@ -561,7 +582,7 @@
           </ul>
 
           <a href="https://fixcore-frontend-eight.vercel.app/start" class="pricing-card__cta pricing-card__cta--orange" id="ctaContractor">
-            Explore the Proposal
+            Explore plan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -570,7 +591,7 @@
 
       <div class="pricing__guarantee animate-on-scroll">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Indicative pricing • Subject to validation • No checkout on this page
+        Prices and terms are subject to confirmation within the platform.
       </div>
     </div>
   </section>
@@ -583,7 +604,7 @@
           Frequently Asked Questions
         </span>
         <h2 class="section-title">Do you have questions about FixCore?</h2>
-        <p class="section-subtitle">Answers about the concept and its planned features.</p>
+        <p class="section-subtitle">Answers to common questions about the platform.</p>
       </div>
 
       <div class="faq__list">
@@ -595,7 +616,7 @@
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer1">
-            <p class="faq-item__answer">No IoT sensors or specialized hardware are planned. FixCore is designed as a web application accessible from computers and mobile devices.</p>
+            <p class="faq-item__answer">You do not need IoT sensors to get started. FixCore is designed for browser access on desktop and mobile devices.</p>
           </div>
         </div>
 
@@ -607,7 +628,7 @@
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer2">
-            <p class="faq-item__answer">The proposed pricing model considers licenses for active field technicians. Operators who only report failures would not count as paid technicians. Final terms still need validation.</p>
+            <p class="faq-item__answer">The Contractor plan is based on the number of technicians. Check terms and availability when accessing the platform.</p>
           </div>
         </div>
 
@@ -619,7 +640,7 @@
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer3">
-            <p class="faq-item__answer">The platform aims to make failure reporting straightforward on mobile devices. Its ease of use will be evaluated through user testing and feedback.</p>
+            <p class="faq-item__answer">FixCore focuses on clear navigation across desktop and mobile screens so field technicians can handle routine tasks more easily.</p>
           </div>
         </div>
 
@@ -631,7 +652,7 @@
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer4">
-            <p class="faq-item__answer">REST API and webhook integrations are planned capabilities. Their availability and ERP compatibility will be confirmed during development.</p>
+            <p class="faq-item__answer">Integration with external systems depends on available tools and versions. Check compatibility before planning an integration.</p>
           </div>
         </div>
       </div>
@@ -641,7 +662,7 @@
 
   <section class="bottom-cta" id="demo">
     <div class="container bottom-cta__inner">
-      <h2 class="bottom-cta__title animate-on-scroll">Are you ready to manage machines and maintenance efficiently??</h2>
+      <h2 class="bottom-cta__title animate-on-scroll">Are you ready to manage machines and maintenance efficiently?</h2>
       <p class="bottom-cta__subtitle animate-on-scroll">Choose the plan that best suits your needs and access the platform today.</p>
       <a href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer" class="btn btn--green btn--lg animate-on-scroll" id="bottomCtaBtn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
@@ -678,7 +699,7 @@
 
 <script>
 
-
+  // ---- Language Toggle Scroll Position ----
   function saveScroll() {
     try { sessionStorage.setItem('langScroll', String(window.scrollY)); } catch (error) { /* Storage may be disabled. */ }
   }
@@ -694,7 +715,7 @@
     }
   });
 
-
+  // ---- Header Scroll Effect ----
   const header = document.getElementById('header');
   let lastScroll = 0;
 
@@ -710,7 +731,7 @@
     lastScroll = currentScroll;
   });
 
-
+  // ---- Mobile Menu Toggle ----
   const mobileToggle = document.getElementById('mobileToggle');
   const mainNav = document.getElementById('mainNav');
 
@@ -731,7 +752,7 @@
     }
   });
 
-
+  // ---- Smooth Scroll for Nav Links ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
 
@@ -750,6 +771,7 @@
           block: 'start'
         });
 
+        // Cerrar menú móvil
         mainNav.classList.remove('active');
         mobileToggle.setAttribute('aria-expanded', 'false');
 
@@ -762,7 +784,11 @@
     });
   });
 
+  // ============================================================
+  // PARTE 2: FEATURES & USAGE GUIDE SECTION
+  // ============================================================
 
+  // ---- Animaciones al hacer Scroll ----
   const observerOptions = {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
@@ -785,7 +811,11 @@
     observer.observe(el);
   });
 
+  // ============================================================
+  // PARTE 3: SEGMENTED BENEFITS & TESTIMONIALS
+  // ============================================================
 
+  // ---- Counter Animation ----
   const counterObserver = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
@@ -850,7 +880,11 @@
     counterObserver.observe(statsSection);
   }
 
+  // ============================================================
+  // PARTE 4: MONTHLY & ANNUAL PRICING VIEWS
+  // ============================================================
 
+  // ---- Pricing Toggle (Monthly / Annual) ----
   let isAnnual = false;
 
   function togglePricingSwitch() {
@@ -877,6 +911,7 @@
     monthlyLabel.setAttribute('aria-pressed', String(!isAnnual));
     annualLabel.setAttribute('aria-pressed', String(isAnnual));
 
+    // Cambiar estado del switch
     if (isAnnual) {
 
       switchEl.classList.add('active');
@@ -893,6 +928,7 @@
 
     }
 
+    // Actualizar precios
     document
             .querySelectorAll('.pricing-card__amount[data-monthly]')
             .forEach(el => {
@@ -923,6 +959,7 @@
 
             });
 
+    // Mostrar / ocultar notas
     document
             .querySelectorAll('.pricing-annual-note')
             .forEach(el => {
@@ -943,7 +980,11 @@
 
   }
 
+  // ============================================================
+  // PARTE 5: FAQ COMPONENT & SUPPORT
+  // ============================================================
 
+  // ---- FAQ Accordion ----
   function toggleFaq(headerEl) {
 
     const faqItem = headerEl.parentElement;
@@ -951,11 +992,13 @@
     const isActive =
             faqItem.classList.contains('active');
 
+    // Cerrar los demás FAQ
     document.querySelectorAll('.faq-item').forEach(item => {
       item.classList.remove('active');
       item.querySelector('.faq-item__header').setAttribute('aria-expanded', 'false');
     });
 
+    // Abrir el FAQ seleccionado
     if (!isActive) {
       faqItem.classList.add('active');
       headerEl.setAttribute('aria-expanded', 'true');
@@ -964,5 +1007,6 @@
   }
 
 </script>
+<script src="public/assets/scripts/main.js" defer></script>
 </body>
 </html>
