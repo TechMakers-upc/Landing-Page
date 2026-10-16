@@ -49,12 +49,10 @@
     </a>
 
     <nav class="header__nav" id="mainNav">
-      <a href="#about-product">Sobre FixCore</a>
       <a href="#features">Características</a>
       <a href="#solutions">Soluciones</a>
       <a href="#pricing">Precios</a>
       <a href="#faq">FAQ</a>
-      <a href="#about-team">Nosotros</a>
     </nav>
 
     <div class="header__actions">
@@ -158,25 +156,6 @@
     </div>
   </section>
 
-  <section class="about-product section section--light" id="about-product">
-    <div class="container">
-      <div class="text-center">
-      <span class="section-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="3" width="20" height="18" rx="2"/>
-        <path d="M2 8h20"/>
-        <path d="M6 5.5h.01M9 5.5h.01"/></svg>
-        FixCore
-      </span> 
-        <h2 class="section-title">Conoce más sobre nuestro producto</h2>
-      </div>
-      
-    <div class="video-container">
-      <div class="video-placeholder"></div>
-    </div>
-    
-    </div>
-    
-  </section>
 
   <section class="features section" id="features">
     <div class="container">
@@ -413,10 +392,10 @@
           <div class="pricing-card__header">
             <div class="pricing-card__icon pricing-card__icon--free">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="4" width="20" height="16" rx="3"/>
-                  <path d="M2 10h20"/>
-                  <path d="M6 15h4"/>
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="3"/>
+                <path d="M2 10h20"/>
+                <path d="M6 15h4"/>
               </svg>
             </div>
             <h3 class="pricing-card__name">Básico</h3>
@@ -672,26 +651,6 @@
     </div>
   </section>
 
-  <section class="about-team section section--light" id="about-team">
-    <div class="container">
-      <div class="text-center">
-      <span class="section-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="8" r="4"/>
-          <path d="M3 21v-2a6 6 0 0 1 12 0v2"/>
-          <path d="M16 4.5a4 4 0 0 1 0 7.5"/>
-        <path d="M21 21v-2a6 6 0 0 0-4-5.65"/></svg>
-        Equipo
-      </span> 
-        <h2 class="section-title">Conoce más sobre nuestro equipo</h2>
-      </div>
-      
-    <div class="video-container">
-      <div class="video-placeholder"></div>
-    </div>
-    
-    </div>
-    
-  </section>
 
   <section class="bottom-cta" id="demo">
     <div class="container bottom-cta__inner">
@@ -723,8 +682,6 @@
     </a>
 
     <nav class="footer__links">
-      <a href="https://github.com/TechMakers-upc" target="_blank" rel="noopener noreferrer" id="footerSupport">Equipo TechMakers</a>
-      <a href="https://github.com/TechMakers-upc/Report" target="_blank" rel="noopener noreferrer" id="footerAPI">Documentación</a>
       <a href="privacidad.html" id="footerPrivacy">Política de privacidad</a>
       <a href="terminos.html" id="footerTerms">Términos y condiciones</a>
     </nav>
@@ -736,7 +693,7 @@
 
 
   function saveScroll() {
-    try { sessionStorage.setItem('langScroll', String(window.scrollY)); } catch (error) { /* Storage may be disabled. */ }
+    try { sessionStorage.setItem('langScroll', String(window.scrollY)); } catch (error) {  }
   }
 
   window.addEventListener('DOMContentLoaded', () => {
@@ -934,7 +891,6 @@
     monthlyLabel.setAttribute('aria-pressed', String(!isAnnual));
     annualLabel.setAttribute('aria-pressed', String(isAnnual));
 
-    // Cambiar estado del switch
     if (isAnnual) {
 
       switchEl.classList.add('active');
