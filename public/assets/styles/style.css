@@ -1237,7 +1237,7 @@ ul, ol {
   margin-bottom: var(--space-md);
 }
 
-.pricing-card__icon--free {
+.pricing-card__icon--basic {
   background: rgba(34,197,94,0.1);
   color: var(--green-500);
 }
@@ -1296,7 +1296,7 @@ ul, ol {
   line-height: 1;
 }
 
-.pricing-card__amount--free {
+.pricing-card__amount--basic {
   font-size: 2.5rem;
   background: linear-gradient(135deg, var(--green-500), var(--green-400));
   -webkit-background-clip: text;
