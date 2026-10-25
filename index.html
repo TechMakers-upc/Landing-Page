@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FixCore — Plataforma CMMS para Gestión de Mantenimiento Industrial</title>
-  <meta name="description" content="Conoce FixCore, un proyecto web para centralizar activos, órdenes de trabajo y repuestos del mantenimiento industrial." />
+  <title>FixCore — CMMS Platform for Industrial Maintenance Management</title>
+  <meta name="description" content="Organize assets, work orders, preventive maintenance and spare parts with FixCore, the industrial maintenance platform." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="public/assets/styles/style.css" />
-  <link rel="alternate" hreflang="es" href="https://techmakers-upc.github.io/Landing-Page/index.html" />
-  <link rel="alternate" hreflang="en" href="https://techmakers-upc.github.io/Landing-Page/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://techmakers-upc.github.io/Landing-Page/index-es.html" />
+  <link rel="alternate" hreflang="en" href="https://techmakers-upc.github.io/Landing-Page/index.html" />
   <link rel="alternate" hreflang="x-default" href="https://techmakers-upc.github.io/Landing-Page/index.html" />
   <style>
     .faq-item__header { width: 100%; background: transparent; color: inherit; text-align: left; }
@@ -25,8 +24,8 @@
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a1628'/><polygon points='16,4 28,10 28,22 16,28 4,22 4,10' fill='none' stroke='%232d7dd2' stroke-width='2.5'/><circle cx='16' cy='16' r='4' fill='%234da3ff'/></svg>" />
 </head>
-
 <body>
+
 <header class="header" id="header">
   <div class="header__inner">
     <a href="#hero" class="header__logo" id="logo">
@@ -49,22 +48,30 @@
     </a>
 
     <nav class="header__nav" id="mainNav">
-      <a href="#about-product">Sobre FixCore</a>
-      <a href="#features">Características</a>
-      <a href="#solutions">Soluciones</a>
-      <a href="#pricing">Precios</a>
+      <a href="#features">Features</a>
+      <a href="#technology">Technology</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#team">Team</a>
+      <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
-      <a href="#about-team">Nosotros</a>
+      <div class="header__nav-auth">
+        <a class="header__auth-link" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Log in</a>
+        <a class="header__auth-button" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Create account</a>
+      </div>
     </nav>
 
     <div class="header__actions">
       <div class="lang-toggle">
-        <a href="./index.html" class="lang-toggle__btn active" onclick="saveScroll()">ES</a>
-        <a href="./index-en.html" class="lang-toggle__btn" onclick="saveScroll()">EN</a>
+        <a href="./index-es.html" class="lang-toggle__btn" onclick="saveScroll()">ES</a>
+        <a href="./index.html" class="lang-toggle__btn active" onclick="saveScroll()">EN</a>
+      </div>
+      <div class="header__auth">
+        <a class="header__auth-link" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Log in</a>
+        <a class="header__auth-button" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Create account</a>
       </div>
     </div>
 
-    <button type="button" class="header__mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">
+    <button type="button" class="header__mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -76,40 +83,34 @@
   <section class="hero" id="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <div class="hero__badge">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M8 1L10.2 5.5L15 6.2L11.5 9.6L12.4 14.3L8 12L3.6 14.3L4.5 9.6L1 6.2L5.8 5.5L8 1Z" fill="currentColor"/>
-          </svg>
-          Proyecto académico de mantenimiento industrial
-        </div>
 
         <h1 class="hero__title">
-          Ayuda a reducir los <span>tiempos muertos</span> en tu planta industrial.
+          Help reduce <span>unplanned downtime</span> at your industrial plant.
         </h1>
 
         <p class="hero__subtitle">
-          Conoce FixCore, un proyecto web para centralizar activos, órdenes de trabajo y repuestos del mantenimiento industrial.
+          Keep your equipment records, work orders and spare parts organized in one industrial maintenance platform.
         </p>
 
         <div class="hero__cta">
-          <a href="https://fixcore-frontend-eight.vercel.app/demo" class="btn btn--primary btn--lg" id="heroPrimaryBtn">
+          <a href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg" id="heroPrimaryBtn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-            Ingresar a la plataforma
+            Access the platform
           </a>
           <a href="#how-it-works" class="btn btn--secondary btn--lg" id="heroSecondaryBtn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            Ver Funcionamiento
+            See How It Works
           </a>
         </div>
 
         <div class="hero__social-proof">
-          <div class="hero__stars"><span class="hero__stars-text">Propuesta basada en entrevistas</span></div>
+          <div class="hero__stars"><span class="hero__stars-text">Built around maintenance workflows</span></div>
 
           <div class="hero__logos">
-            <span>Pensado para:</span>
+            <span>Designed for:</span>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              Pymes
+              SMEs
             </div>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -117,11 +118,11 @@
             </div>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3l-4 4-4-4"/></svg>
-              Campo
+              Field
             </div>
             <div class="hero__logo-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-              Plantas
+              Plants
             </div>
           </div>
         </div>
@@ -129,135 +130,72 @@
 
       <div class="hero__visual">
         <div class="hero__visual-dashboard">
-          <img src="public/assets/images/dashboard-mockup.png" alt="Dashboard FixCore - Gráficos de MTTR y disponibilidad de activos" loading="eager" />
+          <img src="public/assets/images/dashboard-mockup.png" alt="FixCore Dashboard - MTTR and asset availability charts" loading="eager" />
         </div>
         <div class="hero__visual-phone">
-          <img src="public/assets/images/phone-qr-mockup.png" alt="App móvil FixCore escaneando código QR industrial" loading="eager" />
+          <img src="public/assets/images/phone-qr-mockup.png" alt="FixCore mobile app scanning an industrial QR code" loading="eager" />
         </div>
       </div>
     </div>
   </section>
+
   <section class="stats-bar" id="stats">
     <div class="container stats-bar__inner">
       <div class="stats-bar__item animate-on-scroll">
         <div class="stats-bar__number"><span data-count="3">0</span></div>
-        <div class="stats-bar__label">Segmentos objetivo</div>
+        <div class="stats-bar__label">Target segments</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
         <div class="stats-bar__number"><span data-count="6">0</span></div>
-        <div class="stats-bar__label">Módulos propuestos</div>
+        <div class="stats-bar__label">Management areas</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
         <div class="stats-bar__number"><span data-count="2">0</span></div>
-        <div class="stats-bar__label">Tipos de mantenimiento</div>
+        <div class="stats-bar__label">Maintenance types</div>
       </div>
       <div class="stats-bar__item animate-on-scroll">
         <div class="stats-bar__number"><span data-count="1">0</span></div>
-        <div class="stats-bar__label">Plataforma web</div>
+        <div class="stats-bar__label">Web platform</div>
       </div>
     </div>
   </section>
 
-  <section class="about-product section section--light" id="about-product">
+
+  <section class="features section feature-explorer" id="features">
     <div class="container">
       <div class="text-center">
-      <span class="section-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="3" width="20" height="18" rx="2"/>
-        <path d="M2 8h20"/>
-        <path d="M6 5.5h.01M9 5.5h.01"/></svg>
-        FixCore
-      </span> 
-        <h2 class="section-title">Conoce más sobre nuestro producto</h2>
+        <span class="section-badge">Features</span>
+        <h2 class="section-title">Everything your maintenance team needs, in one place.</h2>
+        <p class="section-subtitle">Explore the areas of FixCore and see how they support your workflow.</p>
       </div>
-      
-    <div class="video-container">
-      <div class="video-placeholder"></div>
-    </div>
-    
-    </div>
-    
-  </section>
-
-  <section class="features section" id="features">
-    <div class="container">
-      <div class="text-center">
-        <span class="section-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Funcionalidades
-        </span>
-        <h2 class="section-title">Una experiencia de mantenimiento sin fricción.</h2>
-        <p class="section-subtitle">Cada módulo diseñado para eliminar papel, reducir errores y acelerar la resolución de fallas.</p>
-      </div>
-
-      <div class="features__grid">
-
-        <div class="feature-card animate-on-scroll" id="featureQR">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/>
-              <rect x="2" y="14" width="8" height="8" rx="1"/><path d="M14 14h3v3"/><path d="M20 14v3h-3"/><path d="M14 20h6"/><path d="M20 20v-3"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Reportes por QR</h3>
-          <p class="feature-card__desc">Reporta fallas desde un navegador móvil mediante códigos QR, sin instalar una aplicación nativa.</p>
+      <div class="feature-explorer__layout">
+        <div class="feature-explorer__tabs" role="tablist" aria-label="Explore features">
+          <button type="button" class="feature-select is-active" id="featureTab0" role="tab" aria-selected="true" aria-controls="featurePanel" tabindex="0" data-feature="0">
+            <span class="feature-select__number">01</span><span class="feature-select__title">Assets and equipment records</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab1" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="1">
+            <span class="feature-select__number">02</span><span class="feature-select__title">Work orders</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab2" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="2">
+            <span class="feature-select__number">03</span><span class="feature-select__title">Preventive maintenance</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab3" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="3">
+            <span class="feature-select__number">04</span><span class="feature-select__title">Spare parts inventory</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab4" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="4">
+            <span class="feature-select__number">05</span><span class="feature-select__title">Field reporting</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
+          <button type="button" class="feature-select" id="featureTab5" role="tab" aria-selected="false" aria-controls="featurePanel" tabindex="-1" data-feature="5">
+            <span class="feature-select__number">06</span><span class="feature-select__title">Dashboards and insights</span><span class="feature-select__arrow" aria-hidden="true">↗</span>
+          </button>
         </div>
-
-
-        <div class="feature-card animate-on-scroll" id="featureAlerts">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Alertas Automatizadas</h3>
-          <p class="feature-card__desc">Se contempla enviar alertas sobre fallas críticas, con posibles integraciones de mensajería.</p>
-        </div>
-
-
-        <div class="feature-card animate-on-scroll" id="featureOTs">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Gestión de OTs</h3>
-          <p class="feature-card__desc">Asignación inteligente, check-lists de herramientas y cierre digital. Todo trazable.</p>
-        </div>
-
-
-        <div class="feature-card animate-on-scroll" id="featureInventory">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Control de Inventario</h3>
-          <p class="feature-card__desc">Descuento de stock en tiempo real y alertas de reabastecimiento automáticas.</p>
-        </div>
-
-        <!-- Card 5: Multi-Planta -->
-        <div class="feature-card animate-on-scroll" id="featureMultiPlant">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/>
-              <path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 14h.01"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Arquitectura Multi-Planta</h3>
-          <p class="feature-card__desc">Portal unificado ideal para firmas contratistas que gestionan múltiples clientes.</p>
-        </div>
-
-        <!-- Card 6: Reportes -->
-        <div class="feature-card animate-on-scroll" id="featureReports">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
-              <line x1="2" y1="20" x2="22" y2="20"/>
-            </svg>
-          </div>
-          <h3 class="feature-card__title">Reportes Gerenciales</h3>
-          <p class="feature-card__desc">Cálculo automático de MTTR y disponibilidad a un clic. Decisiones basadas en datos.</p>
+        <div class="feature-explorer__panel" id="featurePanel" role="tabpanel" aria-labelledby="featureTab0" tabindex="0">
+          <span class="feature-explorer__eyebrow" id="featureCategory">Assets</span>
+          <div class="feature-explorer__symbol" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+          <h3 id="featureTitle">Assets and equipment records</h3>
+          <p id="featureDescription">Bring machinery details, manuals, locations and maintenance history together in one place.</p>
+          <ul class="feature-explorer__points" id="featurePoints"><li>Technical information in one place</li><li>Maintenance history by asset</li><li>Browser-based access</li></ul>
+          <a class="feature-explorer__link" href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer">Explore FixCore <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </div>
@@ -268,30 +206,46 @@
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Proceso Simple
+          Simple Process
         </span>
-        <h2 class="section-title">Optimiza tu mantenimiento en 3 simples pasos.</h2>
-        <p class="section-subtitle">De la falla reportada a la máquina reparada, sin papel y sin cuellos de botella.</p>
+        <h2 class="section-title">Optimize your maintenance in 3 simple steps.</h2>
+        <p class="section-subtitle">From reported issue to repaired machine, without paperwork or bottlenecks.</p>
       </div>
 
       <div class="how-it-works__steps">
         <div class="step-card animate-on-scroll" id="step1">
           <div class="step-card__number">1</div>
-          <h3 class="step-card__title">Escanea y Reporta</h3>
-          <p class="step-card__desc">El operario reporta la falla frente a la máquina con un simple escaneo QR desde su celular.</p>
+          <h3 class="step-card__title">Scan and Report</h3>
+          <p class="step-card__desc">The operator reports the issue at the machine with a simple QR scan from their phone.</p>
         </div>
 
         <div class="step-card animate-on-scroll" id="step2">
           <div class="step-card__number">2</div>
-          <h3 class="step-card__title">Asigna y Repara</h3>
-          <p class="step-card__desc">Notificación automática al técnico exacto con la herramienta y repuesto correcto.</p>
+          <h3 class="step-card__title">Assign and Repair</h3>
+          <p class="step-card__desc">Automatic notification to the right technician with the correct tool and spare part.</p>
         </div>
 
         <div class="step-card animate-on-scroll" id="step3">
           <div class="step-card__number">3</div>
-          <h3 class="step-card__title">Mide y Optimiza</h3>
-          <p class="step-card__desc">El jefe de planta visualiza reportes de tiempos de respuesta y toma mejores decisiones.</p>
+          <h3 class="step-card__title">Measure and Optimize</h3>
+          <p class="step-card__desc">The plant manager views response-time reports and makes better decisions.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section technology" id="technology">
+    <div class="container technology__layout">
+      <div class="technology__copy">
+        <span class="section-badge">Technology</span>
+        <h2 class="section-title">More control. Less complexity.</h2>
+        <p>FixCore connects equipment records, work orders and spare parts information into an organized maintenance workflow. Access it from a computer or mobile device without scattered records.</p>
+        <ul class="technology__benefits"><li>Responsive web platform for every screen</li><li>Centralized asset and maintenance data</li><li>A clear workflow from reporting to follow-up</li></ul>
+      </div>
+      <div class="tech-flow" aria-label="Maintenance workflow">
+        <div class="tech-flow__top"><span class="tech-flow__topmark"></span><span>Maintenance workflow</span><span class="tech-flow__online" aria-hidden="true">●</span></div>
+        <div class="tech-flow__steps">              <div class="tech-flow__step"><span class="tech-flow__num">01</span><div><strong>Report</strong><small>Register an issue</small></div></div>              <div class="tech-flow__step"><span class="tech-flow__num">02</span><div><strong>Organize</strong><small>Manage the work order</small></div></div>              <div class="tech-flow__step"><span class="tech-flow__num">03</span><div><strong>Resolve</strong><small>Record the intervention</small></div></div>              <div class="tech-flow__step"><span class="tech-flow__num">04</span><div><strong>Analyze</strong><small>Review maintenance history</small></div></div></div>
+        <p class="tech-flow__footer">One connected workflow, better organized information.</p>
       </div>
     </div>
   </section>
@@ -301,88 +255,126 @@
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          Soluciones
+          Solutions
         </span>
-        <h2 class="section-title">Diseñado para cada eslabón de tu operación.</h2>
-        <p class="section-subtitle">Cada rol tiene su propia vista y experiencia optimizada.</p>
+        <h2 class="section-title">Designed for every part of your operation.</h2>
+        <p class="section-subtitle">Each role has its own optimized view and experience.</p>
       </div>
 
       <div class="solutions__grid">
-        <!-- Card 1: Jefes de Planta -->
+
         <div class="solution-card solution-card--orange animate-on-scroll" id="solutionPlant">
           <div class="solution-card__icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
           </div>
-          <span class="solution-card__tag">Gestión Operativa</span>
-          <h3 class="solution-card__title">Para Jefes de Planta</h3>
-          <p class="solution-card__desc">Historial unificado, control de presupuesto y cero ceguera operativa. Todo en un solo dashboard.</p>
+          <span class="solution-card__tag">Operational Management</span>
+          <h3 class="solution-card__title">For Plant Managers</h3>
+          <p class="solution-card__desc">Unified history, budget control, and complete operational visibility. Everything in one dashboard.</p>
         </div>
 
-        <!-- Card 2: Contratistas -->
         <div class="solution-card solution-card--blue animate-on-scroll" id="solutionContractor">
           <div class="solution-card__icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
           <span class="solution-card__tag">Multi-Tenant</span>
-          <h3 class="solution-card__title">Para Firmas Contratistas</h3>
-          <p class="solution-card__desc">Gestión de clientes y coordinación de técnicos, con reportes personalizables como capacidad prevista.</p>
+          <h3 class="solution-card__title">For Contractor Firms</h3>
+          <p class="solution-card__desc">Coordinate clients, technicians and maintenance work across multiple sites in one place.</p>
         </div>
 
-        <!-- Card 3: Técnicos -->
         <div class="solution-card solution-card--dark animate-on-scroll" id="solutionTech">
           <div class="solution-card__icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <span class="solution-card__tag">Baja Fricción</span>
-          <h3 class="solution-card__title">Para Técnicos de Piso</h3>
-          <p class="solution-card__desc">Interfaz de baja fricción, acceso con PIN/OTP y visualización de stock en campo. Diseñado para guantes.</p>
+          <span class="solution-card__tag">Low Friction</span>
+          <h3 class="solution-card__title">For Field Technicians</h3>
+          <p class="solution-card__desc">Low-friction interface, PIN/OTP access, and field stock visibility. Designed for use with gloves.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
   <section class="testimonials section section--light" id="testimonials">
     <div class="container">
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-          Necesidades identificadas
+          Identified Needs
         </span>
-        <h2 class="section-title">Lo que aprendimos de los usuarios.</h2>
-        <p class="section-subtitle">Síntesis de necesidades detectadas en entrevistas; no son testimonios de clientes.</p>
+        <h2 class="section-title">Less friction across your operation.</h2>
+        <p class="section-subtitle">Keep maintenance work moving without scattered messages, spreadsheets and paper records.</p>
       </div>
 
       <div class="testimonials__grid">
-        <!-- Testimonial 1 -->
+
         <div class="testimonial-card animate-on-scroll" id="testimonial1">
 
           <p class="testimonial-card__quote">
-            En el mantenimiento de planta, la información distribuida entre WhatsApp, Excel y registros físicos dificulta consolidar reportes y dar seguimiento a las fallas.
+            In plant maintenance, information spread across WhatsApp, spreadsheets, and paper records makes reporting and tracking equipment issues difficult.
           </p>
           <div class="testimonial-card__author">
-            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-carla.png" alt="Ilustración de perfil de jefatura de planta" />
+            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-carla.png" alt="Illustration of a plant manager profile" />
             <div>
-              <div class="testimonial-card__name">Jefatura de planta</div>
-              <div class="testimonial-card__role">Segmento de pymes manufactureras</div>
+              <div class="testimonial-card__name">Plant Management</div>
+              <div class="testimonial-card__role">Manufacturing SME segment</div>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
         <div class="testimonial-card animate-on-scroll" id="testimonial2">
 
           <p class="testimonial-card__quote">
-            Las empresas contratistas necesitan coordinar técnicos en diferentes plantas y mantener un historial organizado de los servicios prestados a sus clientes.
+            Maintenance contractors need to coordinate technicians across client sites and keep organized records of the services delivered.
           </p>
           <div class="testimonial-card__author">
-            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-victor.png" alt="Ilustración de perfil de coordinación de operaciones" />
+            <img class="testimonial-card__avatar" src="public/assets/images/testimonial-victor.png" alt="Illustration of an operations coordinator profile" />
             <div>
-              <div class="testimonial-card__name">Coordinación de operaciones</div>
-              <div class="testimonial-card__role">Segmento de empresas contratistas</div>
+              <div class="testimonial-card__name">Operations Coordination</div>
+              <div class="testimonial-card__role">Maintenance contractor segment</div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light team" id="team">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge">Our team</span>
+        <h2 class="section-title">Meet TechMakers.</h2>
+        <p class="section-subtitle">A team bringing web development, design and technology together to build FixCore.</p>
+      </div>
+      <div class="team__grid">
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-alvar.jpg" alt="Alvar Lucas Córdova" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Alvar Lucas Córdova</h3>
+          <p class="team-card__role">Web development &amp; coordination</p>
+          <p class="team-card__bio">Works with HTML, CSS, JavaScript, Vue and .NET, combining web development skills with team coordination.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-sunio.jpg" alt="Sunio Danilo Landa Sánchez" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Sunio Danilo Landa Sánchez</h3>
+          <p class="team-card__role">Web development &amp; collaboration</p>
+          <p class="team-card__bio">Works with C++, JavaScript, HTML and CSS, using Git, GitHub and collaborative development practices.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-giuseppe.jpg" alt="Giuseppe Adrián Villanueva Rodríguez" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Giuseppe Adrián Villanueva Rodríguez</h3>
+          <p class="team-card__role">UI &amp; web development</p>
+          <p class="team-card__bio">Applies knowledge of Java, SQL, Angular and TypeScript to interface design and web development.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-diego.jpg" alt="Diego Rances Rojas Huaranga" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Diego Rances Rojas Huaranga</h3>
+          <p class="team-card__role">Applications &amp; web services</p>
+          <p class="team-card__bio">Works with C#, .NET, SQL, REST services and interface development using Vue, HTML and CSS.</p>
+        </article>
+        <article class="team-card">
+          <img class="team-card__photo" src="public/assets/images/foto-pierre.jpg" alt="Pierre Alessandro Mendoza Boluarte" loading="lazy" width="112" height="112" />
+          <h3 class="team-card__name">Pierre Alessandro Mendoza Boluarte</h3>
+          <p class="team-card__role">Design &amp; prototyping</p>
+          <p class="team-card__bio">Combines HTML, CSS, JavaScript and C++ with interface design and prototyping.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -392,95 +384,102 @@
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-          Planes propuestos
+          FixCore plans
         </span>
-        <h2 class="section-title">Planes diseñados para escalar contigo.</h2>
-        <p class="section-subtitle">Opciones referenciales para validar el modelo de negocio. Esta página no procesa suscripciones ni pagos.</p>
+        <h2 class="section-title">Plans for every stage of your operation.</h2>
+        <p class="section-subtitle">Choose the plan that best fits your operation and team size.</p>
       </div>
 
-
       <div class="pricing__toggle">
-        <button type="button" class="pricing__toggle-label active" id="toggleMonthly" onclick="togglePricing('monthly')" aria-pressed="true">Mensual</button>
-        <button type="button" class="pricing__toggle-switch" id="pricingSwitch" onclick="togglePricingSwitch()" role="switch" aria-checked="false" aria-label="Cambiar entre facturación mensual y anual"></button>
-        <button type="button" class="pricing__toggle-label" id="toggleAnnual" onclick="togglePricing('annual')" aria-pressed="false">Anual</button>
-        <span class="pricing__save-badge">Ahorra 20%</span>
+        <button type="button" class="pricing__toggle-label active" id="toggleMonthly" onclick="togglePricing('monthly')" aria-pressed="true">Monthly</button>
+        <button type="button" class="pricing__toggle-switch" id="pricingSwitch" onclick="togglePricingSwitch()" role="switch" aria-checked="false" aria-label="Switch between monthly and annual billing"></button>
+        <button type="button" class="pricing__toggle-label" id="toggleAnnual" onclick="togglePricing('annual')" aria-pressed="false">Annual</button>
+        <span class="pricing__save-badge">Annual savings</span>
       </div>
 
       <div class="pricing__grid">
 
-        <!-- ===== PLAN FREEMIUM ===== -->
-        <div class="pricing-card animate-on-scroll" id="planFree">
+        <div class="pricing-card animate-on-scroll" id="planBasic">
           <div class="pricing-card__header">
-            <div class="pricing-card__icon pricing-card__icon--free">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="pricing-card__icon pricing-card__icon--basic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="3"/>
+                <path d="M2 10h20"/>
+                <path d="M6 15h4"/>
+              </svg>
             </div>
-            <h3 class="pricing-card__name">Entrada</h3>
-            <p class="pricing-card__desc">Prueba sin fricción. Ideal para validar la plataforma en tu planta antes de escalar.</p>
+            <h3 class="pricing-card__name">Basic</h3>
+            <p class="pricing-card__desc">Essential features to organize equipment maintenance and keep operations on track.</p>
           </div>
 
           <div class="pricing-card__price">
-            <span class="pricing-card__amount pricing-card__amount--free">Gratis</span>
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount" data-monthly="39" data-annual="29">39</span>
+            <span class="pricing-card__period">USD / month</span>
           </div>
-          <p class="pricing-card__period-note">Nivel gratuito propuesto • Sujeto a validación</p>
+          <p class="pricing-card__period-note">
+            <span class="pricing-annual-note" style="display:none;">Annual equivalent ($348/year)</span>
+            <span class="pricing-monthly-note">Monthly reference price in USD</span>
+          </p>
 
           <div class="pricing-card__divider"></div>
 
           <ul class="pricing-card__features">
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Hasta 3 máquinas críticas
+              Up to 10 critical machines
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Reportes QR ilimitados
+              Unlimited QR reports
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              1 usuario técnico
+              5 technician users
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Órdenes de Trabajo básicas
+              Basic Work Orders
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Historial de 30 días
+              60-day history
+            </li>
+            <li class="pricing-card__feature pricing-card__feature--included">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              WhatsApp Alerts
             </li>
             <li class="pricing-card__feature pricing-card__feature--excluded">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              Alertas WhatsApp
-            </li>
-            <li class="pricing-card__feature pricing-card__feature--excluded">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              Reportes gerenciales
+              Management Reports
             </li>
           </ul>
 
-          <a href="https://fixcore-frontend-eight.vercel.app/demo" class="pricing-card__cta pricing-card__cta--outline" id="ctaFree">
-            Ver propuesta
+          <a href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer" class="pricing-card__cta pricing-card__cta--outline" id="ctaBasic">
+            Explore plan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- ===== PLAN DE PLANTA ===== -->
         <div class="pricing-card pricing-card--featured animate-on-scroll" id="planPlant">
-          <div class="pricing-card__popular">⭐ Más Popular</div>
+          <div class="pricing-card__popular">⭐ Most Popular</div>
           <div class="pricing-card__header">
             <div class="pricing-card__icon pricing-card__icon--plant">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 10h.01"/></svg>
             </div>
-            <h3 class="pricing-card__name">Planta</h3>
-            <p class="pricing-card__desc">Para fábricas individuales. Todo lo que tu jefatura y operarios necesitan.</p>
+            <h3 class="pricing-card__name">Plant</h3>
+            <p class="pricing-card__desc">For individual factories. Everything your management and operators need.</p>
           </div>
 
           <div class="pricing-card__price">
             <span class="pricing-card__currency">$</span>
             <span class="pricing-card__amount" data-monthly="89" data-annual="71">89</span>
-            <span class="pricing-card__period">USD / mes</span>
+            <span class="pricing-card__period">USD / month</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Facturación anual referencial ($852/año)</span>
-            <span class="pricing-monthly-note">Referencia mensual en USD</span>
+            <span class="pricing-annual-note" style="display:none;">Annual equivalent ($852/year)</span>
+            <span class="pricing-monthly-note">Monthly reference price in USD</span>
           </p>
 
           <div class="pricing-card__divider"></div>
@@ -488,62 +487,61 @@
           <ul class="pricing-card__features">
             <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Máquinas ilimitadas
+              Unlimited machines
             </li>
             <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Hasta 10 técnicos activos
+              Up to 10 active technicians
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Usuarios gerenciales ilimitados
+              Unlimited management users
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Alertas WhatsApp en tiempo real
+              Real-Time WhatsApp Alerts
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Control de inventario y stock
+              Inventory and stock control
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Reportes MTTR y disponibilidad
+              MTTR and availability reports
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Historial completo ilimitado
+              Unlimited complete history
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Soporte prioritario
+              Priority support
             </li>
           </ul>
 
-          <a href="https://fixcore-frontend-eight.vercel.app/demo" class="pricing-card__cta pricing-card__cta--primary" id="ctaPlant">
-            Ver propuesta
+          <a href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer" class="pricing-card__cta pricing-card__cta--primary" id="ctaPlant">
+            Explore plan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- ===== PLAN CONTRATISTA ===== -->
         <div class="pricing-card animate-on-scroll" id="planContractor">
           <div class="pricing-card__header">
             <div class="pricing-card__icon pricing-card__icon--contractor">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
             </div>
-            <h3 class="pricing-card__name">Contratista</h3>
-            <p class="pricing-card__desc">Para firmas B2B de mantenimiento que gestionan múltiples fábricas. Escala sin límites.</p>
+            <h3 class="pricing-card__name">Contractor</h3>
+            <p class="pricing-card__desc">For B2B maintenance firms managing multiple factories. Scale without limits.</p>
           </div>
 
           <div class="pricing-card__price">
             <span class="pricing-card__currency">$</span>
             <span class="pricing-card__amount" data-monthly="29" data-annual="23">29</span>
-            <span class="pricing-card__period">USD / técnico / mes</span>
+            <span class="pricing-card__period">USD / technician / month</span>
           </div>
           <p class="pricing-card__period-note">
-            <span class="pricing-annual-note" style="display:none;">Facturación anual referencial ($276/técnico/año)</span>
-            <span class="pricing-monthly-note">Clientes y plantas ilimitadas incluidas</span>
+            <span class="pricing-annual-note" style="display:none;">Annual equivalent ($276/technician/year)</span>
+            <span class="pricing-monthly-note">Unlimited clients and plants included</span>
           </p>
 
           <div class="pricing-card__divider"></div>
@@ -551,19 +549,19 @@
           <ul class="pricing-card__features">
             <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Clientes/plantas ilimitadas
+              Unlimited clients/plants
             </li>
             <li class="pricing-card__feature pricing-card__feature--included pricing-card__feature--highlight">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Portal multi-tenant completo
+              Full multi-tenant portal
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Reportes white-label con tu logo
+              White-label reports with your logo
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Ruteo y despacho de técnicos
+              Technician routing and dispatch
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -571,30 +569,29 @@
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Integración ERP (SAP, Oracle)
+              ERP integration (SAP, Oracle)
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Todo lo del Plan Planta
+              Everything in the Plant Plan
             </li>
             <li class="pricing-card__feature pricing-card__feature--included">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Onboarding dedicado
+              Dedicated onboarding
             </li>
           </ul>
 
-          <a href="https://fixcore-frontend-eight.vercel.app/demo" class="pricing-card__cta pricing-card__cta--orange" id="ctaContractor">
-            Ver propuesta
+          <a href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer" class="pricing-card__cta pricing-card__cta--orange" id="ctaContractor">
+            Explore plan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
       </div>
 
-      <!-- Guarantee -->
       <div class="pricing__guarantee animate-on-scroll">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Precios referenciales • Sujeto a validación • Sin contratación desde esta página
+        Prices and terms are subject to confirmation within the platform.
       </div>
     </div>
   </section>
@@ -604,97 +601,75 @@
       <div class="text-center">
         <span class="section-badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          Preguntas Frecuentes
+          Frequently Asked Questions
         </span>
-        <h2 class="section-title">¿Tienes preguntas sobre FixCore?</h2>
-        <p class="section-subtitle">Respuestas sobre la propuesta y sus funcionalidades previstas.</p>
+        <h2 class="section-title">Do you have questions about FixCore?</h2>
+        <p class="section-subtitle">Answers to common questions about the platform.</p>
       </div>
 
       <div class="faq__list">
         <div class="faq-item active" id="faq1">
           <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="true" aria-controls="faqAnswer1">
-            <span class="faq-item__question">¿Necesito instalar hardware especial?</span>
+            <span class="faq-item__question">Do I need to install special hardware?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer1">
-            <p class="faq-item__answer">No está previsto que se requieran sensores IoT ni hardware especializado. FixCore se plantea como una aplicación web accesible desde computadoras y dispositivos móviles.</p>
+            <p class="faq-item__answer">You do not need IoT sensors to get started. FixCore is designed for browser access on desktop and mobile devices.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq2">
           <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faqAnswer2">
-            <span class="faq-item__question">¿Cómo funciona el cobro por técnico en campo?</span>
+            <span class="faq-item__question">How would pricing per field technician work?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer2">
-            <p class="faq-item__answer">La propuesta de precios contempla licencias por técnico activo. Los operarios dedicados únicamente a reportar fallas no se contabilizarían como técnicos de pago. Las condiciones definitivas aún deben validarse.</p>
+            <p class="faq-item__answer">The Contractor plan is based on the number of technicians. Check terms and availability when accessing the platform.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq3">
           <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faqAnswer3">
-            <span class="faq-item__question">¿Es difícil que los operarios mayores aprendan a usarlo?</span>
+            <span class="faq-item__question">Will the platform be easy for less tech-savvy operators to use?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer3">
-            <p class="faq-item__answer">La propuesta busca facilitar el uso desde dispositivos móviles con pasos sencillos para reportar fallas. La facilidad de uso se evaluará con pruebas y retroalimentación de usuarios.</p>
+            <p class="faq-item__answer">FixCore focuses on clear navigation across desktop and mobile screens so field technicians can handle routine tasks more easily.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq4">
           <button type="button" class="faq-item__header" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faqAnswer4">
-            <span class="faq-item__question">¿Puedo integrar FixCore con mi ERP actual?</span>
+            <span class="faq-item__question">Can FixCore integrate with my existing ERP?</span>
             <span class="faq-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
           <div class="faq-item__body" id="faqAnswer4">
-            <p class="faq-item__answer">La integración mediante API REST y webhooks forma parte de las capacidades previstas. Su disponibilidad y compatibilidad con ERP se confirmarán durante el desarrollo.</p>
+            <p class="faq-item__answer">Integration with external systems depends on available tools and versions. Check compatibility before planning an integration.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about-team section section--light" id="about-team">
-    <div class="container">
-      <div class="text-center">
-      <span class="section-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="8" r="4"/>
-          <path d="M3 21v-2a6 6 0 0 1 12 0v2"/>
-          <path d="M16 4.5a4 4 0 0 1 0 7.5"/>
-        <path d="M21 21v-2a6 6 0 0 0-4-5.65"/></svg>
-        Equipo
-      </span> 
-        <h2 class="section-title">Conoce más sobre nuestro equipo</h2>
-      </div>
-      
-    <div class="video-container">
-      <div class="video-placeholder"></div>
-    </div>
-    
-    </div>
-    
-  </section>
 
   <section class="bottom-cta" id="demo">
     <div class="container bottom-cta__inner">
-      <h2 class="bottom-cta__title animate-on-scroll">¿Quieres conocer el proyecto FixCore?</h2>
-      <p class="bottom-cta__subtitle animate-on-scroll">Conoce la propuesta y consulta sus avances en GitHub.</p>
-      <a href="https://fixcore-frontend-eight.vercel.app/demo" target="_blank" rel="noopener noreferrer" class="btn btn--green btn--lg animate-on-scroll" id="bottomCtaBtn">
+      <h2 class="bottom-cta__title animate-on-scroll">Are you ready to manage machines and maintenance efficiently?</h2>
+      <p class="bottom-cta__subtitle animate-on-scroll">Choose the plan that best suits your needs and access the platform today.</p>
+      <a href="https://fixcore-frontend-eight.vercel.app/start" target="_blank" rel="noopener noreferrer" class="btn btn--green btn--lg animate-on-scroll" id="bottomCtaBtn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-        Ver proyecto en GitHub
+        Enter FixCore
       </a>
-      <p class="bottom-cta__fine-print animate-on-scroll">Proyecto académico en desarrollo • No se realizan pagos ni registros desde esta página</p>
     </div>
   </section>
-
 
 </main>
 <footer class="footer" id="footer">
@@ -714,18 +689,17 @@
     </a>
 
     <nav class="footer__links">
-      <a href="https://github.com/TechMakers-upc" target="_blank" rel="noopener noreferrer" id="footerSupport">Equipo TechMakers</a>
-      <a href="https://github.com/TechMakers-upc/Report" target="_blank" rel="noopener noreferrer" id="footerAPI">Documentación</a>
-      <a href="privacidad.html" id="footerPrivacy">Política de privacidad</a>
-      <a href="terminos.html" id="footerTerms">Términos y condiciones</a>
+      <a href="privacy-en.html" id="footerPrivacy">Privacy Policy</a>
+      <a href="terms-en.html" id="footerTerms">Terms and Conditions</a>
     </nav>
 
-    <span class="footer__copy">&copy; 2026 FixCore. Todos los derechos reservados.</span>
+    <span class="footer__copy">&copy; 2026 FixCore. All rights reserved.</span>
   </div>
 </footer>
+
 <script>
 
-
+  // ---- Language Toggle Scroll Position ----
   function saveScroll() {
     try { sessionStorage.setItem('langScroll', String(window.scrollY)); } catch (error) { /* Storage may be disabled. */ }
   }
@@ -741,7 +715,7 @@
     }
   });
 
-
+  // ---- Header Scroll Effect ----
   const header = document.getElementById('header');
   let lastScroll = 0;
 
@@ -757,7 +731,7 @@
     lastScroll = currentScroll;
   });
 
-
+  // ---- Mobile Menu Toggle ----
   const mobileToggle = document.getElementById('mobileToggle');
   const mainNav = document.getElementById('mainNav');
 
@@ -778,7 +752,7 @@
     }
   });
 
-
+  // ---- Smooth Scroll for Nav Links ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
 
@@ -797,7 +771,7 @@
           block: 'start'
         });
 
-
+        // Cerrar menú móvil
         mainNav.classList.remove('active');
         mobileToggle.setAttribute('aria-expanded', 'false');
 
@@ -810,7 +784,11 @@
     });
   });
 
+  // ============================================================
+  // PARTE 2: FEATURES & USAGE GUIDE SECTION
+  // ============================================================
 
+  // ---- Animaciones al hacer Scroll ----
   const observerOptions = {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
@@ -833,7 +811,11 @@
     observer.observe(el);
   });
 
+  // ============================================================
+  // PARTE 3: SEGMENTED BENEFITS & TESTIMONIALS
+  // ============================================================
 
+  // ---- Counter Animation ----
   const counterObserver = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
@@ -867,14 +849,14 @@
             if (current < target) {
 
               counter.textContent =
-                      Math.ceil(current).toLocaleString('es-MX');
+                      Math.ceil(current).toLocaleString('en-US');
 
               requestAnimationFrame(updateCounter);
 
             } else {
 
               counter.textContent =
-                      target.toLocaleString('es-MX');
+                      target.toLocaleString('en-US');
 
             }
           };
@@ -898,7 +880,11 @@
     counterObserver.observe(statsSection);
   }
 
+  // ============================================================
+  // PARTE 4: MONTHLY & ANNUAL PRICING VIEWS
+  // ============================================================
 
+  // ---- Pricing Toggle (Monthly / Annual) ----
   let isAnnual = false;
 
   function togglePricingSwitch() {
@@ -942,7 +928,7 @@
 
     }
 
-
+    // Actualizar precios
     document
             .querySelectorAll('.pricing-card__amount[data-monthly]')
             .forEach(el => {
@@ -973,7 +959,7 @@
 
             });
 
-
+    // Mostrar / ocultar notas
     document
             .querySelectorAll('.pricing-annual-note')
             .forEach(el => {
@@ -994,7 +980,11 @@
 
   }
 
+  // ============================================================
+  // PARTE 5: FAQ COMPONENT & SUPPORT
+  // ============================================================
 
+  // ---- FAQ Accordion ----
   function toggleFaq(headerEl) {
 
     const faqItem = headerEl.parentElement;
@@ -1002,11 +992,13 @@
     const isActive =
             faqItem.classList.contains('active');
 
+    // Cerrar los demás FAQ
     document.querySelectorAll('.faq-item').forEach(item => {
       item.classList.remove('active');
       item.querySelector('.faq-item__header').setAttribute('aria-expanded', 'false');
     });
 
+    // Abrir el FAQ seleccionado
     if (!isActive) {
       faqItem.classList.add('active');
       headerEl.setAttribute('aria-expanded', 'true');
@@ -1015,6 +1007,6 @@
   }
 
 </script>
-
+<script src="public/assets/scripts/main.js" defer></script>
 </body>
 </html>
