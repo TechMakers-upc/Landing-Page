@@ -1966,3 +1966,27 @@ ul, ol {
   .tech-flow { padding: 16px; }
   .tech-flow__step { padding: 12px; }
 }
+/* Seccion de video del producto: mantiene el estilo de FixCore */
+.fixcore-product-video__frame {
+  position: relative;
+  width: 100%;
+  max-width: 940px;
+  aspect-ratio: 16 / 9;
+  margin: 28px auto 18px;
+  overflow: hidden;
+  border: 1px solid rgba(45, 125, 210, .22);
+  border-radius: 16px;
+  background: #0a1628;
+  box-shadow: 0 16px 44px rgba(15, 31, 61, .15);
+}
+.fixcore-product-video__frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.fixcore-product-video__link { text-align: center; }
+.fixcore-product-video__link a { color: #155caa; font-weight: 600; }
+@media (max-width: 640px) {
+  .fixcore-product-video__frame { margin: 18px auto 14px; border-radius: 10px; }
+}
